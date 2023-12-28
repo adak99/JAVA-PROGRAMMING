@@ -286,7 +286,7 @@ public class pattern_printing {
 
         pattern_printing.pattern_3();
 
-        System.out.println("\nPattern 4.");//
+        System.out.println("\nPattern 4.\n");//
 
         pattern_printing.pattern_4();
 
