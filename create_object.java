@@ -1,5 +1,15 @@
 import java.util.Scanner;
 
+public class create_object {
+    public static void main(String[] args) {
+        student soumya = new student();
+
+        System.out.println(soumya);
+
+        soumya.claculategrade();
+
+    }
+}
 class student {
     String name;
     int beng, eng, math, geo, coma, total;
@@ -57,13 +67,3 @@ class student {
 
 }
 
-public class create_object {
-    public static void main(String[] args) {
-        student soumya = new student();
-
-        System.out.println(soumya);
-
-        soumya.claculategrade();
-
-    }
-}
