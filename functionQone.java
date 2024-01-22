@@ -16,6 +16,7 @@ public class functionQone {
         int b = scan.nextInt();
         System.out.print("Enter the value of C: ");
         int c = scan.nextInt();
+        scan.close();
 
         System.out.println("Answer: " + average(a, b, c));
     }
