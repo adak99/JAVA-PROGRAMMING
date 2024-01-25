@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class functuonQthird {
+public class functionQthird {
 
     private static int findGraterNumber(int a, int b) {
 
@@ -21,7 +21,6 @@ public class functuonQthird {
         int a = scan.nextInt();
         System.out.print("Enter the value of B: ");
         int b = scan.nextInt();
-        scan.close();
 
         System.out.println("Answer: " + findGraterNumber(a, b));
     }
