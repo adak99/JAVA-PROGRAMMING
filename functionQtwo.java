@@ -24,6 +24,8 @@ public class functionQtwo {
         System.out.print("Enter any number: ");
         int n = scan.nextInt();
 
+        scan.close();
+
         System.out.print("\nThe sum fo all odd numbers form 1 to " + n + " is : " + sumOfoddNumbers(n));
     }
 }
