@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class linerSearchArray {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the size of array: ");
         int size = scan.nextInt();
@@ -18,9 +18,8 @@ public class linerSearchArray {
         int x = scan.nextInt();
 
         for (int i = 0; i < number.length; i++) {
-            if (number[i] == x) {
-                System.out.println("X found in index number: " + i);
-            }
+            if (number[i] == x)
+                System.out.println("X (" + x + ") found in index number: " + i);
         }
     }
 }
