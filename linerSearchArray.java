@@ -5,17 +5,17 @@ public class linerSearchArray {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the size of array: ");
-        int size = scan.nextInt();
+        int size = sc.nextInt();
 
         int number[] = new int[size];
 
         System.out.println("Enter input: ");
         for (int i = 0; i < size; i++) {
-            number[i] = scan.nextInt();
+            number[i] = sc.nextInt();
         }
 
         System.out.print("Enter the value of x: ");
-        int x = scan.nextInt();
+        int x = sc.nextInt();
 
         for (int i = 0; i < number.length; i++) {
             if (number[i] == x)
