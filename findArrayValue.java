@@ -31,4 +31,9 @@ public class findArrayValue {
         System.out.println("The min value of the array is: " + min);
         System.out.println("The max value of the array is: " + max);
     }
+
+    public void myMedhod() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'myMedhod'");
+    }
 }
