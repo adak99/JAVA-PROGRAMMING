@@ -1,17 +1,18 @@
 import java.util.Scanner;
 
-public class find_value_of_x_in_TwoDarray {
+public class FindValueTwoDArray {
 
-    public static void findValue() {
+    private static void methodCall() {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Enter number of Rows: ");
+        System.out.print("Enter rows of the array: ");
         int row = scan.nextInt();
-        System.out.print("Enter number of Columns: ");
+        System.out.print("Enter columns of the array: ");
         int col = scan.nextInt();
 
-        int[][] number = new int[row][col]; // create a tow D array
+        int[][] number = new int[row][col];
 
+        // input
         System.out.println("Enter input: ");
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
@@ -19,20 +20,21 @@ public class find_value_of_x_in_TwoDarray {
             }
         }
 
-        System.out.print("Enter the value of X : ");
+        // Declear find value
+        System.out.print("Enter value of the X : ");
         int x = scan.nextInt();
 
-        System.out.println("Output: ");
+        // output
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 if (number[i][j] == x) {
-                    System.out.println("The value of the X found in rows number : " + i + " and columns number: " + j);
+                    System.out.println("The value of the X find in row of " + i + " and columns of " + j);
                 }
             }
         }
     }
 
-    public static void main(String[] args) {
-        findValue();
+    public static void main(String args[]) {
+        methodCall();
     }
 }
