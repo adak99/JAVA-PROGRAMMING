@@ -10,6 +10,7 @@ public class create_object {
 
     }
 }
+
 class student {
     String name;
     int beng, eng, math, geo, coma, total;
@@ -66,4 +67,3 @@ class student {
     }
 
 }
-
