@@ -18,8 +18,8 @@ public class AscendingAndDsending {
         // logic for ascending order
         int temp = 0;
         for (int i = 0; i < size; i++) {
-            for (int j = i + 1; j < size; j++) {
-                if (arr[i] > arr[j]) {
+            for (int j = 0; j < size; j++) {
+                if (arr[i] < arr[j]) {
                     temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
@@ -49,8 +49,9 @@ public class AscendingAndDsending {
 
         // Descebding order output
         System.out.print("Descebing order output:- ");
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++)
             System.out.print(arr[i] + " ");
-        }
+
+        scan.close();
     }
 }

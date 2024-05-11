@@ -1,42 +1,36 @@
-
 import java.util.Scanner;
 
 public class findArrayValue {
-
-    public static void myMedhod() {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter the size of the array: ");
         int size = scan.nextInt();
 
-        int number[] = new int[size];
+        int arr[] = new int[size];
 
-        System.out.println("Enter array inputs: ");
-        for (int i = 0; i < size; i++) {
-            number[i] = scan.nextInt();
-        }
+        System.out.println("Enter inputs: ");
+        for (int i = 0; i < size; i++)
+            arr[i] = scan.nextInt();
 
-        int max = number[0];
-        int min = number[0];
-
-        // or
-
-        // int max = Integer.MIN_VALUE;
-        // int min = Integer.MAX_VALUE;
-
-        for (int i = 0; i < number.length; i++) {
-            if (number[i] > max) {
-                max = number[i];
-            }
-            if (number[i] < min) {
-                min = number[i];
-            }
-        }
-        System.out.println("The min value of the array is: " + min);
-        System.out.println("The max value of the array is: " + max);
+        findMinMaxValue(arr);
     }
 
-    public static void main(String[] args) {
-        myMedhod();
+    public static void findMinMaxValue(int arr[]) {
+
+        int min = arr[0];
+        int max = arr[0];
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        System.out.println(min + " it is the minimum value of the array.");
+        System.out.println(max + " it is the maximum value of the array.");
     }
 }

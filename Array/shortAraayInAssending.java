@@ -19,8 +19,8 @@ public class shortAraayInAssending {
         // logic to shorting the array element in assending order
         int temp = 0; // take a integer for swaping values, set the integer name is "temp"
         for (int i = 0; i < size; i++) { // take a nested for loop
-            for (int j = i + 1; j < size; j++) {
-                if (arr[i] > arr[j]) {
+            for (int j = 0; j < size; j++) {
+                if (arr[i] < arr[j]) {
                     temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
@@ -33,5 +33,6 @@ public class shortAraayInAssending {
         for (int i = 0; i < size; i++) {
             System.out.print(arr[i] + " ");
         }
+        scan.close();
     }
 }

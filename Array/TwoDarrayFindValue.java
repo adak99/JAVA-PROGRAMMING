@@ -33,6 +33,8 @@ public class TwoDarrayFindValue {
                 }
             }
         }
+
+        scan.close();
     }
 
     public static void main(String[] args) {

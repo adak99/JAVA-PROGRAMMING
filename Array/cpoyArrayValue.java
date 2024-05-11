@@ -29,5 +29,6 @@ public class cpoyArrayValue {
             a[i] = scan.nextInt();
 
         printArray(a, b);
+        scan.close();
     }
 }

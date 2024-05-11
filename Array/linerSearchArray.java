@@ -10,16 +10,16 @@ public class linerSearchArray {
         int number[] = new int[size];
 
         System.out.println("Enter input: ");
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++)
             number[i] = sc.nextInt();
-        }
 
         System.out.print("Enter the value of x: ");
         int x = sc.nextInt();
 
-        for (int i = 0; i < number.length; i++) {
+        for (int i = 0; i < number.length; i++)
             if (number[i] == x)
                 System.out.println("X (" + x + ") found in index number: " + i);
-        }
+
+        sc.close();
     }
 }
