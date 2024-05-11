@@ -1,0 +1,40 @@
+1) Syntax of String builder:
+        
+        class StirngBuilder{
+            public static void main(Stirng[] args){
+                StringBuilder sb = new StringBuilder("Hello");
+            }
+        }
+
+2) Functions of String Builder:
+
+    i) charecter index 
+
+            Syntax: 
+
+                class StirngBuilder{
+                    public static void main(Stirng[] args){
+                        StringBuilder sb = new StringBuilder("Hello");
+                         System.out.println(sb.charAt(0));
+                    }
+                }
+    
+    ii) Set charcter index:
+
+                Syntax:  sb.setCharAt(0, 'p');
+    
+    iii) Insert function: 
+                Syntax: sb.insert(0, 's');
+                        sb.insert(2, 'n');
+    
+    iv) Delete charcter: 
+                Syntax: sb.delete(2, 3);
+    
+    v) append function to set a charder at the last index of the declared charcter index
+                Syantax of appedn function: 
+                        StringBuilder sb = new StringBuilder("h");
+                        sb.append("e");
+                        sb.append("l");
+                        sb.append("l");
+                        sb.append("o");
+                        System.out.println(sb);
