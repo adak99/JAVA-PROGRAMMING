@@ -14,6 +14,7 @@ public class findArrayValue {
             arr[i] = scan.nextInt();
 
         findMinMaxValue(arr);
+        scan.close();
     }
 
     public static void findMinMaxValue(int arr[]) {
@@ -32,5 +33,6 @@ public class findArrayValue {
 
         System.out.println(min + " it is the minimum value of the array.");
         System.out.println(max + " it is the maximum value of the array.");
+
     }
 }
