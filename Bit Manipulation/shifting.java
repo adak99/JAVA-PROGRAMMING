@@ -1,22 +1,35 @@
-//package JAVA-PROGRAMMING.Bit Manipulation;
-
 public class shifting {
     public static void main(String args[]) {
 
-        // left shift (<<)
-        int a = 8; // initial value
-        int b = 2; // bit masking value
-        int c = a << b; // c = a left shit b (8*2*2)
+        // 8 >> 1; right shift
 
-        System.out.println("\nleft shift: " + c);
-        System.out.println("8*2*2\n");
-        // right shift (>>)
         int x = 8;
-        int y = 2;
-        int z = x >> y; // z = a right shift b (8/2/2)
+        int y = 1;
+        int z = x >> y;
 
-        System.out.println("right shift: " + z);
-        System.out.println("8/2/2\n");
+        System.out.println("8 >> 1 : " + z);
 
+        // 8 >> 2; right shift
+
+        int a = 8;
+        int b = 2;
+        int c = a >> b;
+
+        System.out.println("8 >> 2 : " + c);
+
+        // 8 << 1;
+
+        int d = 8;
+        int e = 1;
+        int f = d << e;
+
+        System.out.println("8 << 1 : " + f);
+
+        // 8 << 2;
+        int g = 8;
+        int h = 2;
+        int i = g << h;
+
+        System.out.println("8 << 2 : " + i);
     }
 }
