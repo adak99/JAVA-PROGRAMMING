@@ -19,5 +19,6 @@ public class functionQone {
         scan.close();
 
         System.out.println("Answer: " + average(a, b, c));
+        scan.close();
     }
 }
