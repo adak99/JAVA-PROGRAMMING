@@ -18,5 +18,7 @@ public class updateBit {
             int newNumber = notBitMask & n;
             System.out.println("The update bit is: " + newNumber);
         }
+
+        scan.close();
     }
 }
