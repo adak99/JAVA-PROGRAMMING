@@ -22,5 +22,6 @@ public class fibonacciSerese {
         int number = scan.nextInt();
 
         calculateFinboSerise(number);
+        scan.close();
     }
 }
