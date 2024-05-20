@@ -28,5 +28,6 @@ public class findFibonacciNum_in_recursion {
 
         System.out.print("Fibonacci Serise:- ");
         printFiboserise(numberOfTerams);
+        scan.close();
     }
 }
