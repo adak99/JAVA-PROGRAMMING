@@ -1,5 +1,5 @@
 //set char at index example2
-public class setCharAtIndexEx2 {
+public class setcharAtIndex {
     public static void main(String args[]) {
         StringBuilder sb = new StringBuilder("nodejs"); // python
 
