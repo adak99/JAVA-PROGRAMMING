@@ -19,7 +19,6 @@ public class printAllevenOrEvenNum {
     }
 
     private static void countOddEven(int arr[], int size) {
-
         // Print even numbers
         System.out.print("Even numbers: ");
         for (int i = 0; i < size; i++) {
