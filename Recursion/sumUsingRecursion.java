@@ -1,4 +1,4 @@
-public class sumUsingRecurrsion {
+public class sumUsingRecursion {
 
     int add(int num1, int num2) {
         int c = num1 + num2;
@@ -11,7 +11,7 @@ public class sumUsingRecurrsion {
     }
 
     public static void main(String[] args) {
-        sumUsingRecurrsion output = new sumUsingRecurrsion();
+        sumUsingRecursion output = new sumUsingRecursion();
 
         int result = output.add(2, 3);
         System.out.println("Answer: " + result);
