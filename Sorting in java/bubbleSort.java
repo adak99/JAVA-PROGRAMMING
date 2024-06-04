@@ -1,4 +1,4 @@
-//Shorting the arrya in assending order using bubble short 
+//Sorting the array in ascending order using bubble sort
 public class bubbleSort {
 
     public static void printArray(int arr[]) {
