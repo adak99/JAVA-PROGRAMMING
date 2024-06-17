@@ -1,5 +1,5 @@
  <h1 align="center">Recursion</h1>
-<table width="100%" border="2px solid black">
+<table width="100%" border="2px solid black" align="center">
   <tr>
     <th>No</th>
     <th>Quesiton</th>
