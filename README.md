@@ -25,8 +25,8 @@
   </tr>
   <!--question number 4-->
 	<td align="center">4</td>
-    <td align="center">Find the value of x in 2D array</td>
-    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/TwoDarrayFindValue.java">Answer</a></td>
+    <td align="center">Liner serach in array</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/linerSearchArray.java">Answer</a></td>
   <!--question number 5-->
   </tr>
 	<td align="center">5</td>
@@ -80,7 +80,32 @@
 	<td align="center">13</td>
     <td align="center">Find second largest value in the array</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/findSecondLargestNum.java">Answer</a></td>
+  </tr>   
+  <!--question number 14-->
   </tr>
+	<td align="center">14</td>
+    <td align="center">Liner search in 2D array</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/TwoDarrayFindValue.java">Answer</a></td>
+  </tr>
+   <!--question number 15-->
+  </tr>
+	<td align="center">15</td>
+    <td align="center">Move all zeros at the last of the array</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/moveAllZerolast_Index.java">Answer</a></td>
+  </tr>
+     <!--question number 16-->
+  </tr>
+	<td align="center">16</td>
+    <td align="center">Print total numbers of odd and even numbers in 2D array</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/printAllevenOddNumTwoDarray.java">Answer</a></td>
+  </tr>
+   <!--question number 17-->
+  </tr>
+	<td align="center">17</td>
+    <td align="center">Reverse all array values</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/reverseArrayValue.java">Answer</a></td>
+  </tr>
+  
 </table>
 
 
