@@ -6,7 +6,7 @@ public class Recursion2 {
         }
 
         System.out.print(n + " ");
-        printNumber(n + 1);
+        printNumber(n++);
     }
 
     public static void main(String[] args) {
