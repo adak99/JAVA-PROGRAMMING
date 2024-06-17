@@ -1,4 +1,4 @@
-public class check2DArratEqualorNot {
+public class checkArrayElementEqualOrNot {
 
     private static void check2DArrayValue(int a[][], int b[][]) {
 
