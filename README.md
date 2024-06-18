@@ -90,7 +90,7 @@
   <!--question number 15-->
   </tr>
 	<td align="center">15</td>
-    <td align="center"><img src="img_1.png" hight="55px" width="55px"> <br>Print this pattern Using loop</td>
+    <td align="center"><img src="img_1.png" hight="200px" width="200px"> <br>Print this pattern Using loop</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_10.java">Answer</a></td>
   </tr>
 </table>
