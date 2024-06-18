@@ -6,7 +6,7 @@
 
 <!--Loops-->
 <h1 align="center">Loops</h1>
-<table style="width:100%; border:1px solid black; border-collapse: collapse;">
+<table width="100%" border="2px solid black" align="center">
   <tr width="100%" border="2px solild black">
     <th>No</th>
     <th>Quesiton</th>
