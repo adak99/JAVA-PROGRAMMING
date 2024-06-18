@@ -1,3 +1,4 @@
+<center><img src="image.png" hight="50%" width="70%"></center>
 <!--Loops-->
 <h1 align="center">Loops</h1>
 <table width="100%" border="2px solid black" align="center">
