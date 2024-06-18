@@ -1,6 +1,6 @@
 <!--Loops-->
 <!--Array-->
-<h1 align="center">Loops</h1>
+<h1 align="center">Loop</h1>
 <table width="100%" border="2px solid black" align="center">
   <tr width="100%" border="2px solild black">
     <th>No</th>
