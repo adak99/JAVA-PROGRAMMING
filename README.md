@@ -90,8 +90,44 @@
   <!--question number 15-->
   </tr>
 	<td align="center">15</td>
-    <td align="center"><img src="img_1.png" hight="200px" width="200px"> <br>Print this pattern Using loop</td>
+    <td align="center"><br><img src="img_1.png" hight="150px" width="150px"> <br>Print this pattern using loop</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_10.java">Answer</a></td>
+  </tr>
+   <!--question number 16-->
+  </tr>
+	<td align="center">16</td>
+    <td align="center"><br><img src="img_2.png" hight="150px" width="150px"> <br>Print this pattern using loop</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_11.java">Answer</a></td>
+  </tr>
+    <!--question number 17-->
+  </tr>
+	<td align="center">17</td>
+    <td align="center"><br><img src="img_3.png" hight="150px" width="150px"> <br>Print this pattern using loop</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_12.java">Answer</a></td>
+  </tr>
+     <!--question number 18-->
+  </tr>
+	<td align="center">18</td>
+    <td align="center"><br><img src="img_4.png" hight="150px" width="150px"> <br>Print this pattern using loop</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_13.java">Answer</a></td>
+  </tr>
+      <!--question number 19-->
+  </tr>
+	<td align="center">19</td>
+    <td align="center"><br><img src="img_5.png" hight="150px" width="150px"> <br>Print this pattern using loop</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_14.java">Answer</a></td>
+  </tr>
+      <!--question number 20-->
+  </tr>
+	<td align="center">20</td>
+    <td align="center"><br><img src="img_6.png" hight="150px" width="150px"> <br>Print this pattern using loop</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_15.java">Answer</a></td>
+  </tr>
+    <!--question number 21-->
+  </tr>
+	<td align="center">21</td>
+    <td align="center"><br><img src="img_7.png" hight="150px" width="150px"> <br>Print this pattern using loop</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_16.java">Answer</a></td>
   </tr>
 </table>
 
