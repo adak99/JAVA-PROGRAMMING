@@ -1,10 +1,9 @@
-public class DoWhileLoop {
+public class doWhileLoop {
     public static void main(String[] args) {
         int i = 0;
-
         do {
-            System.out.println("Hello world");
+            System.out.println("Hello");
             i++;
-        } while (i < 10);
+        } while (i < 5);
     }
 }
