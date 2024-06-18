@@ -1,4 +1,6 @@
-<center><img src="java.png" hight="41%" width="100%"></center>
+<center>
+  <img src="java.png" style="border: 2px solid white; height: 41%; width: 100%;">
+</center>
 <!--Loops-->
 <h1 align="center">Loops</h1>
 <table width="100%" border="2px solid black" align="center">
