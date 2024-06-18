@@ -1,6 +1,9 @@
-<center>
-  <img src="java.png" style="border: 2px solid white; height: 41%; width: 100%;">
-</center>
+<p align="center">
+  <kbd>
+    <img src="java.png" alt="Java Image" style="border:2px solid white;"/>
+  </kbd>
+</p>
+
 <!--Loops-->
 <h1 align="center">Loops</h1>
 <table width="100%" border="2px solid black" align="center">
