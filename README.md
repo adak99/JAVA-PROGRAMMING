@@ -238,6 +238,12 @@
     <td align="center">Reverse all array values</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/reverseArrayValue.java">Answer</a></td>
   </tr>
+  <!--question number 18-->
+  </tr>
+	<td align="center">18</td>
+    <td align="center">Move first array elemet at the last</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/MoveTheFirstElementAtLast.java">Answer</a></td>
+  </tr>
 </table>
 
 <!--Recursion-->
