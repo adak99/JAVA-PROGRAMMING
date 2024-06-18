@@ -1,6 +1,6 @@
 <!--Loops-->
 <!--Array-->
-<h1 align="center">Loop</h1>
+<h1 align="center">Loops</h1>
 <table width="100%" border="2px solid black" align="center">
   <tr width="100%" border="2px solild black">
     <th>No</th>
@@ -86,6 +86,12 @@
 	<td align="center">14</td>
     <td align="center">Print triangle combination of 0 and 1</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_9.java">Answer</a></td>
+  </tr>
+  <!--question number 15-->
+  </tr>
+	<td align="center">15</td>
+    <td align="center"><img src="image_1.png" hight="55px" width="55px"> <br>Print this pattern Using loop</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_10.java">Answer</a></td>
   </tr>
 </table>
 
