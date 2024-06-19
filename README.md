@@ -1,7 +1,5 @@
 <p align="center">
-  <kbd>
     <img src="java.png" hight="40%" width="100%">
-  </kbd>
 </p>
 
 <!--Loops-->
