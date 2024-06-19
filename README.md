@@ -1,6 +1,6 @@
 <p align="center">
   <kbd>
-    <img src="java.png" alt="Java Image" style="border:3px solid white;"/>
+    <img src="java.png" hight="40%" width="100%">
   </kbd>
 </p>
 
