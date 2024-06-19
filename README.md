@@ -293,4 +293,9 @@
     <td align="center">Print x^n (stack height = n)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion6.java">Answer</a></td>
   </tr>
+      <!--question number 7-->
+	<td align="center">7</td>
+    <td align="center">Print x^n (stack hight = log n)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion7.java">Answer</a></td>
+  </tr>
 </table>
