@@ -8,9 +8,9 @@ public class Recursion6 {
             return 1;
         }
 
-        int xPowerNm1 = claculatePower(x, n - 1);
-        int xpowern = x * xPowerNm1;
-        return xpowern;
+        int xpower = claculatePower(x, n - 1);
+        int calPower = x * xpower;
+        return calPower;
     }
 
     public static void main(String[] args) {
