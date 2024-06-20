@@ -311,6 +311,6 @@
   <!--question number 10-->
 	<td align="center">9</td>
     <td align="center">Find the 1st and last occurance of an element in string</td>
-    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion10.javaa">Answer</a></td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion10.java">Answer</a></td>
   </tr>
 </table>
