@@ -269,48 +269,77 @@
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion1.java">Answer</a></td>
   </tr>
   <!--question number 2-->
+  <tr>
    <td align="center">2</td>
     <td align="center">Print numbers of 1 to 2 using recursion</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion2.java">Answer</a></td>
   </tr>
 	<!--question number 3-->
+	<tr>
 	<td align="center">3</td>
     <td align="center">Print sum of first natural numbers using recursion</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion3.java">Answer</a></td>
   </tr>
   <!--question number 4-->
+  <tr>
 	<td align="center">4</td>
     <td align="center">Print factorila of n</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion4.java">Answer</a></td>
   </tr>
     <!--question number 5-->
+	<tr>
 	<td align="center">5</td>
     <td align="center">Print fibonacci series of n</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion5.java">Answer</a></td>
   </tr>
     <!--question number 6-->
+	<tr>
 	<td align="center">6</td>
     <td align="center">Print x^n (stack height = n)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion6.java">Answer</a></td>
   </tr>
       <!--question number 7-->
+	<tr>
 	<td align="center">7</td>
     <td align="center">Print x^n (stack hight = log n)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion7.java">Answer</a></td>
   </tr>
    <!--question number 8-->
+   <tr>
 	<td align="center">8</td>
     <td align="center">Tower of Hanoi **</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion8.java">Answer</a></td>
   </tr>
    <!--question number 9-->
+   <tr>
 	<td align="center">9</td>
     <td align="center">Print a string in reverse</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion9.java">Answer</a></td>
   </tr>
   <!--question number 10-->
-	<td align="center">9</td>
+  <tr>
+	<td align="center">10</td>
     <td align="center">Find the 1st and last occurance of an element in string</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion10.java">Answer</a></td>
   </tr>
+  <!--question number 11-->
+  <tr>
+	<td align="center">11</td>
+    <td align="center">Find a array shorted or not using recursion</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion11.java">Answer</a></td>
+  </tr>
+  <!--question number 12-->
+  <tr>
+	<td align="center">12</td>
+    <td align="center">Move all the X at last of the index</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion12.java">Answer</a></td>
+  </tr>
+  
+  <!--praction_questions-->
+  <tr>
+	<td align="center">13</td>
+    <td align="center">Move all the zeros at last of the index</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/MoveAllZeroAtLastUseRecursion.java">Answer</a></td>
+  </tr>
+  
 </table>
