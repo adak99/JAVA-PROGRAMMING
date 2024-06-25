@@ -253,7 +253,7 @@
    <!--question number 19-->
   </tr>
 	<td align="center">19</td>
-    <td align="center">Find the array is sorted or not</td>
+    <td align="center">Find if an array is sorted or not</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/FindTheArraySortedOrNot.java">Answer</a></td>
   </tr>
 </table>
