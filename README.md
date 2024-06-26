@@ -340,10 +340,34 @@
     <td align="center">Move all the X at last of the index</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion12.java">Answer</a></td>
   </tr>
-  
-  <!--praction_questions-->
+  <!--question number 13-->
   <tr>
 	<td align="center">13</td>
+    <td align="center">Remove all the duplicate elements in a String</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion13.java">Answer</a></td>
+  </tr>
+   <!--question number 14-->
+  <tr>
+	<td align="center">14</td>
+    <td align="center">Print all the subsequences of a string (important)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion14.java">Answer</a></td>
+  </tr>
+  <!--question number 15-->
+  <tr>
+	<td align="center">15</td>
+    <td align="center">Print all the unique subsequences of a string (important)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion15.java">Answer</a></td>
+  </tr>
+  <!--question number 16-->
+  <tr>
+	<td align="center">16</td>
+    <td align="center">Print key pad combination(important)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion16.java">Answer</a></td>
+  </tr>
+
+  <!--praction_questions-->
+  <tr>
+	<td align="center">$</td>
     <td align="center">Move all the zeros at last of the index</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/MoveAllZeroAtLastUseRecursion.java">Answer</a></td>
   </tr>
