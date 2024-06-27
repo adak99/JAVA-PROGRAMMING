@@ -373,8 +373,8 @@
   <!--question number 18-->
   <tr>
 	<td align="center">17</td>
-    <td align="center">print all permutations of a string(important)</td>
-    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion17.java">Answer</a></td>
+    <td align="center">Count total paths in a maze to move from (0,0) to (n,m)(important)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion18.java">Answer</a></td>
   </tr>
 
   <!--praction_questions-->
