@@ -6,8 +6,8 @@
 
 <table style="width: 100%; border-collapse: collapse;">
     <tr>
-        <th style="border: 1px solid black; padding: 10px; text-align: left; background-color: #f2f2f2;"><h3>Topic</h3></th>
-        <th style="border: 1px solid black; padding: 10px; text-align: left; background-color: #f2f2f2;"><h3>Description</h3></th>
+        <th style="border: 1px solid black; padding: 10px; text-align: left; background-color: #f2f2f2;"><h2>Topic</h2></th>
+        <th style="border: 1px solid black; padding: 10px; text-align: left; background-color: #f2f2f2;"><h2>Description</h2></th>
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 10px; text-align: left;">Introduction to Java</td>
