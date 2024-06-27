@@ -364,6 +364,12 @@
     <td align="center">Print key pad combination(important)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion16.java">Answer</a></td>
   </tr>
+  <!--question number 17-->
+  <tr>
+	<td align="center">17</td>
+    <td align="center">print all permutations of a string(important)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion17.java">Answer</a></td>
+  </tr>
 
   <!--praction_questions-->
   <tr>
