@@ -6,8 +6,8 @@
 
 <table style="width: 100%; border-collapse: collapse;">
     <tr>
-        <th style="border: 1px solid black; padding: 10px; text-align: left; background-color: #f2f2f2;">Topic</th>
-        <th style="border: 1px solid black; padding: 10px; text-align: left; background-color: #f2f2f2;">Description</th>
+        <th style="border: 1px solid black; padding: 10px; text-align: left; background-color: #f2f2f2;"><h3>Topic</h3></th>
+        <th style="border: 1px solid black; padding: 10px; text-align: left; background-color: #f2f2f2;"><h3>Description</h3></th>
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 10px; text-align: left;">Introduction to Java</td>
@@ -78,6 +78,8 @@
         <td style="border: 1px solid black; padding: 10px; text-align: left;">Building graphical user interfaces (GUIs) using JavaFX.</td>
     </tr>
 </table>
+
+<h1 align="cener">Practice question 👇👇</h1>
 
 <!--Loops-->
 <h1 align="center">Loops</h1>
