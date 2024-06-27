@@ -372,9 +372,15 @@
   </tr>
   <!--question number 18-->
   <tr>
-	<td align="center">17</td>
+	<td align="center">18</td>
     <td align="center">Count total paths in a maze to move from (0,0) to (n,m)(important)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion18.java">Answer</a></td>
+  </tr>
+   <!--question number 19-->
+  <tr>
+	<td align="center">19</td>
+    <td align="center">Place Tiles of size 1xm in a floor of size nxm (important)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion19.java">Answer</a></td>
   </tr>
 
   <!--praction_questions-->
