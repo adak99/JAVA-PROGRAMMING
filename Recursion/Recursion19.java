@@ -5,8 +5,7 @@ public class Recursion19 {
         // base case
         if (n == m) {
             return 2;
-        }
-        if (n < m) {
+        } else if (n < m) {
             return 1;
         }
 
@@ -20,7 +19,7 @@ public class Recursion19 {
     }
 
     public static void main(String[] args) {
-        int n = 4, m = 2;
+        int n = 2, m = 3;
         System.out.println(placeTiles(n, m));
     }
 }
