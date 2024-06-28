@@ -2,7 +2,6 @@
     <img src="java.png" hight="40%" width="100%">
 </p>
 
-
 <!--Loops-->
 <h1 align="center">Loops</h1>
 <table width="100%" border="2px solid black" align="center">
@@ -382,6 +381,12 @@
 	<td align="center">19</td>
     <td align="center">Place Tiles of size 1xm in a floor of size nxm (important)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion19.java">Answer</a></td>
+  </tr>
+  <!--question number 20-->
+  <tr>
+	<td align="center">20</td>
+    <td align="center">Find the number of ways in which you can invite n people to your pary. singel of in pairs (important)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion20.java">Answer</a></td>
   </tr>
 
   <!--praction_questions-->
