@@ -400,6 +400,12 @@
     <td align="center">Find the number of ways in which you can invite n people to your pary. singel of in pairs (important)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion20.java">Answer</a></td>
   </tr>
+  <!--question number 21-->
+  <tr>
+	<td align="center">21</td>
+    <td align="center">Print all the subset of a set of first n natural numbers (important)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion21.java">Answer</a></td>
+  </tr>
 
   <!--praction_questions-->
   <tr>
