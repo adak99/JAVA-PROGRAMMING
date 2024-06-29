@@ -271,7 +271,6 @@
 </table>
 
 <!--Recursion-->
-
 <h1 align="center">Recursion</h1>
 <table width="100%" border="2px solid black" align="center">
   <tr width="100%" border="2px solild black">
@@ -422,6 +421,19 @@
     <th>Quesiton</th>
     <th>Answer</th>
   </tr>
+  <!--question -1-->
+  </tr>
+	<td align="center">1</td>
+    <td align="center">Arrange 'ABC' them in a singel line permutation problem</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Backtracking/Permutation.java">Answer</a></td>
+  </tr>
+   <!--question -2-->
+  </tr>
+	<td align="center">2</td>
+    <td align="center">N - queens (important qustion)</td>
+    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Backtracking/N_queens.java">Answer</a></td>
+  </tr>
+
   <!--$$$$$$$-->
   </tr>
 	<td align="center">$</td>
