@@ -411,4 +411,10 @@
     <td align="center">N-queens (important)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Backtracking/N_queens.java">Answer</a></td>
   </tr>
+     <!--$$$$$$-->
+  <tr>
+	<td align="center">$</td>
+    <td align="center">--------------------------------------------------------------------------------------------------</td>
+    <td align="center"><a href="">&</a></td>
+  </tr>
   </table>
