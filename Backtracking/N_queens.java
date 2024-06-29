@@ -115,7 +115,7 @@ public class N_queens {
         // Print all solutions
         for (List<String> solution : solutions) {
             for (String row : solution) {
-                System.out.println(row);
+                System.out.print("[" + row + "]" + " ");
             }
             System.out.println();
         }
