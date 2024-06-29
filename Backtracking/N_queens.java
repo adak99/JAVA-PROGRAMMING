@@ -1,4 +1,4 @@
-// N Queens
+// N Queens (important)
 
 import java.util.List;
 import java.util.ArrayList;
