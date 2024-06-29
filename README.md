@@ -135,6 +135,13 @@
     <td align="center">Advance pattern printing 7</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_16.java">Answer</a></td>
   </tr>
+
+   <!--$$$$$$-->
+  <tr>
+	<td align="center">$</td>
+    <td align="center">--------------------------------------------------------------------------------------------------</td>
+    <td align="center"><a href="">&</a></td>
+  </tr>
 </table>
 
 <!--Array-->
@@ -255,6 +262,13 @@
 	<td align="center">19</td>
     <td align="center">Find if an array is sorted or not</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/FindTheArraySortedOrNot.java">Answer</a></td>
+  </tr>
+
+   <!--$$$$$$-->
+  <tr>
+	<td align="center">$</td>
+    <td align="center">--------------------------------------------------------------------------------------------------</td>
+    <td align="center"><a href="">&</a></td>
   </tr>
 </table>
 
@@ -388,6 +402,12 @@
 	<td align="center">$</td>
     <td align="center">Move all the zeros at last of the index</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/MoveAllZeroAtLastUseRecursion.java">Answer</a></td>
+  </tr>
+   <!--$$$$$$-->
+  <tr>
+	<td align="center">$</td>
+    <td align="center">--------------------------------------------------------------------------------------------------</td>
+    <td align="center"><a href="">&</a></td>
   </tr>
 </table>
 
