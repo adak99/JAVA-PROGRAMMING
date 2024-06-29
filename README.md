@@ -135,12 +135,6 @@
     <td align="center">Advance pattern printing 7</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/pattern_16.java">Answer</a></td>
   </tr>
-     <!--$$$$$$$-->
-  </tr>
-	<td align="center">$</td>
-    <td align="center">_________________________________________________________________________________________</td>
-    <td align="center"><a href="">$</a></td>
-  </tr>
 </table>
 
 <!--Array-->
@@ -262,15 +256,10 @@
     <td align="center">Find if an array is sorted or not</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/FindTheArraySortedOrNot.java">Answer</a></td>
   </tr>
-  <!--$$$$$$$-->
-  </tr>
-	<td align="center">$</td>
-    <td align="center">_________________________________________________________________________________________</td>
-    <td align="center"><a href="">$</a></td>
-  </tr>
 </table>
 
 <!--Recursion-->
+
 <h1 align="center">Recursion</h1>
 <table width="100%" border="2px solid black" align="center">
   <tr width="100%" border="2px solild black">
@@ -393,18 +382,6 @@
     <td align="center">Place Tiles of size 1xm in a floor of size nxm (important)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion19.java">Answer</a></td>
   </tr>
-  <!--question number 20-->
-  <tr>
-	<td align="center">20</td>
-    <td align="center">Find the number of ways in which you can invite n people to your pary. singel of in pairs (important)</td>
-    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion20.java">Answer</a></td>
-  </tr>
-  <!--question number 21-->
-  <tr>
-	<td align="center">21</td>
-    <td align="center">Print all the subset of a set of first n natural numbers (important)</td>
-    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/Recursion21.java">Answer</a></td>
-  </tr>
 
   <!--praction_questions-->
   <tr>
@@ -412,33 +389,5 @@
     <td align="center">Move all the zeros at last of the index</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/MoveAllZeroAtLastUseRecursion.java">Answer</a></td>
   </tr>
-
-  <!--backtracking-->
-  <h1 align="center">Backtraking</h1>
-<table width="100%" border="2px solid black" align="center">
-  <tr width="100%" border="2px solild black">
-    <th>No</th>
-    <th>Quesiton</th>
-    <th>Answer</th>
-  </tr>
-  <!--question -1-->
-  </tr>
-	<td align="center">1</td>
-    <td align="center">Arrange 'ABC' them in a singel line permutation problem</td>
-    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Backtracking/Permutation.java">Answer</a></td>
-  </tr>
-   <!--question -2-->
-  </tr>
-	<td align="center">2</td>
-    <td align="center">N - queens (important qustion)</td>
-    <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Backtracking/N_queens.java">Answer</a></td>
-  </tr>
-
-  <!--$$$$$$$-->
-  </tr>
-	<td align="center">$</td>
-    <td align="center">_________________________________________________________________________________________</td>
-    <td align="center"><a href="">$</a></td>
-  </tr>
-
+  
 </table>
