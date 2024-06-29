@@ -138,7 +138,7 @@
      <!--$$$$$$$-->
   </tr>
 	<td align="center">$</td>
-    <td align="center">&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&</td>
+    <td align="center">_________________________________________________________________________________________</td>
     <td align="center"><a href="">$</a></td>
   </tr>
 </table>
@@ -265,7 +265,7 @@
   <!--$$$$$$$-->
   </tr>
 	<td align="center">$</td>
-    <td align="center">&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&</td>
+    <td align="center">_________________________________________________________________________________________</td>
     <td align="center"><a href="">$</a></td>
   </tr>
 </table>
@@ -414,8 +414,8 @@
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/MoveAllZeroAtLastUseRecursion.java">Answer</a></td>
   </tr>
 
-<!--Back traking-->
-<h1 align="center">Backtracking</h1>
+  <!--backtracking-->
+  <h1 align="center">Backtraking</h1>
 <table width="100%" border="2px solid black" align="center">
   <tr width="100%" border="2px solild black">
     <th>No</th>
@@ -425,9 +425,8 @@
   <!--$$$$$$$-->
   </tr>
 	<td align="center">$</td>
-    <td align="center">&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&</td>
+    <td align="center">_________________________________________________________________________________________</td>
     <td align="center"><a href="">$</a></td>
   </tr>
-</table>
 
 </table>
