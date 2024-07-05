@@ -9,14 +9,14 @@
     <th>No</th>
     <th>Quesiton</th>
     <th>Java</th>
-    <th>Python</th>
+	<th>Python</th>
   </tr>
   <!--question no 1-->
   <tr width="100%">
     <td align="center">1</td>
     <td align="center">For loop</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/for_loop.java">Answer</a></td>
-    <td align="center"><a href="">Answer<td>
+	<td align="center"><a href="">Answer</a></td>
   </tr>
   <!--question number 2-->
   <tr>
