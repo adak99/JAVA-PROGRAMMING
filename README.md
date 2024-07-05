@@ -9,7 +9,7 @@
     <th>No</th>
     <th>Quesiton</th>
     <th>JAVA</th>
-    <th>PHYTHON</th>
+    <th>PYTHON</th>
   </tr>
   <!--question no 1-->
   <tr width="100%">
@@ -139,11 +139,11 @@
   </tr>
 
    <!--$$$$$$-->
-  <tr>
+  <!-- <tr>
 	<td align="center">$</td>
     <td align="center">--------------------------------------------------------------------------------------------------</td>
     <td align="center"><a href="">&</a></td>
-  </tr>
+  </tr> -->
 </table>
 
 <!--Array-->
