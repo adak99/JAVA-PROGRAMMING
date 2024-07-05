@@ -8,8 +8,8 @@
   <tr width="100%" border="2px solild black">
     <th>No</th>
     <th>Quesiton</th>
-    <th>JAVA</th>
-    <th>PYTHON</th>
+    <th>Java</th>
+    <th>Python</th>
   </tr>
   <!--question no 1-->
   <tr width="100%">
