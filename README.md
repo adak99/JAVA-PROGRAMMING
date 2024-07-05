@@ -8,13 +8,15 @@
   <tr width="100%" border="2px solild black">
     <th>No</th>
     <th>Quesiton</th>
-    <th>Answer</th>
+    <th>JAVA</th>
+    <th>PHYTHON</th>
   </tr>
   <!--question no 1-->
   <tr width="100%">
     <td align="center">1</td>
     <td align="center">For loop</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Loops%20and%20Pattern%20Printing/for_loop.java">Answer</a></td>
+    <td align="center"><a href="">Answer<td>
   </tr>
   <!--question number 2-->
   <tr>
