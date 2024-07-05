@@ -9,7 +9,7 @@
     <th>No</th>
     <th>Quesiton</th>
     <th>Java</th>
-	<th>Python</th>
+	  <th>Python</th>
   </tr>
   <!--question no 1-->
   <tr width="100%">
@@ -152,7 +152,8 @@
   <tr width="100%" border="2px solild black">
     <th>No</th>
     <th>Quesiton</th>
-    <th>Answer</th>
+    <th>Java</th>
+	  <th>Python</th>
   </tr>
 
   <!--question no 1-->
@@ -266,10 +267,10 @@
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Array/FindTheArraySortedOrNot.java">Answer</a></td>
   </tr>
 
-   <!--$$$$$$-->
+  <!--$$$$$$-->
   <tr>
 	<td align="center">$</td>
-    <td align="center">--------------------------------------------------------------------------------------------------</td>
+    <td align="center">----------------------------------------------------------------------------------------</td>
     <td align="center"><a href="">&</a></td>
   </tr>
 </table>
@@ -281,7 +282,8 @@
   <tr width="100%" border="2px solild black">
     <th>No</th>
     <th>Quesiton</th>
-    <th>Answer</th>
+    <th>Java</th>
+	  <th>Python</th>
   </tr>
 
   <!--question no 1-->
@@ -405,10 +407,10 @@
     <td align="center">Move all the zeros at last of the index</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Recursion/MoveAllZeroAtLastUseRecursion.java">Answer</a></td>
   </tr>
-   <!--$$$$$$-->
+  <!--$$$$$$-->
   <tr>
 	<td align="center">$</td>
-    <td align="center">--------------------------------------------------------------------------------------------------</td>
+    <td align="center">----------------------------------------------------------------------------------------</td>
     <td align="center"><a href="">&</a></td>
   </tr>
 </table>
@@ -419,7 +421,8 @@
   <tr width="100%" border="2px solild black">
     <th>No</th>
     <th>Quesiton</th>
-    <th>Answer</th>
+    <th>Java</th>
+	  <th>Python</th>
   </tr>
    <!--questions 1-->
   <tr>
@@ -433,10 +436,10 @@
     <td align="center">N-queens (important)</td>
     <td align="center"><a href="https://github.com/adak99/JAVA-PROGRAMMING/blob/main/Backtracking/N_queens.java">Answer</a></td>
   </tr>
-     <!--$$$$$$-->
+    <!--$$$$$$-->
   <tr>
 	<td align="center">$</td>
-    <td align="center">--------------------------------------------------------------------------------------------------</td>
+    <td align="center">----------------------------------------------------------------------------------------</td>
     <td align="center"><a href="">&</a></td>
   </tr>
   </table>
