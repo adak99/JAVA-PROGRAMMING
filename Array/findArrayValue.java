@@ -33,6 +33,7 @@ public class findArrayValue {
 
         System.out.println(min + " it is the minimum value of the array.");
         System.out.println(max + " it is the maximum value of the array.");
-
     }
 }
+
+// different way =>
