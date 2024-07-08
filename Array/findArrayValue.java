@@ -37,3 +37,22 @@ public class findArrayValue {
 }
 
 // different way =>
+
+import java.util.Arrays;
+
+public class findArrayValue {
+
+    public static void findValue(int arr[]) {
+        Arrays.sort(arr);
+        int smallestNumber = arr[0];
+        int largestNumber = arr[arr.length - 1];
+
+        System.out.println("Most smallest value in the array is: " + smallestNumber);
+        System.out.println("Most largest value in the array is: " + largestNumber);
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 2, 5, 1, 6, 3, 4 };
+        findValue(arr);
+    }
+}
