@@ -37,6 +37,5 @@ public class transposeArray {
             }
             System.out.println();
         }
-
     }
 }
