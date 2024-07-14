@@ -17,7 +17,6 @@ public class removeDuplicate {
     public static void main(String[] args) {
         int arr[] = { 1, 2, 2, 4, 3, 5, 4, 3, 6, 5 };
         HashSet<Integer> uniqueElement = new HashSet<>();
-
         System.out.println("Original Array: ");
         printOriginalArray(arr);
         System.out.println("\nAfter removing duplicate elements: ");
