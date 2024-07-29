@@ -1,51 +1,61 @@
+import java.util.Arrays;
+
 public class mergeSort {
+    // conqure part
+    public static int[] concqure(int left[], int[] right) {
+        // create a new array
+        int mergedArray[] = new int[left.length + right.length];
 
-    public static void conquer(int arr[], int sIndex, int mid, int eIndex) {
-        int mergedArr[] = new int[eIndex - sIndex + 1];
+        int i = 0; // i indicates the index of left divided array
+        int j = 0; // j inidicates the index of right divided array
+        int k = 0; // k indicates the index of merged array
 
-        int index1 = sIndex;
-        int index2 = mid + 1;
-        int x = 0;
-
-        while (index1 <= mid && index2 <= eIndex) {
-            if (arr[index1] <= arr[index2])
-                mergedArr[x++] = arr[index1++];
-            else
-                mergedArr[x++] = arr[index2++];
+        // concqure arrays
+        while (i < left.length && j < right.length) {
+            if (left[i] < right[j]) {
+                mergedArray[k++] = left[i++];
+            } else {
+                mergedArray[k++] = right[j++];
+            }
         }
 
-        while (index1 <= mid) {
-            mergedArr[x++] = arr[index1++];
+        // if element is bound
+        while (i < left.length) {
+            mergedArray[k++] = left[i++];
         }
 
-        while (index2 <= eIndex) {
-            mergedArr[x++] = arr[index2++];
+        while (j < right.length) {
+            mergedArray[k++] = right[j++];
         }
 
-        for (int i = 0, j = sIndex; i < mergedArr.length; i++, j++) {
-            arr[j] = mergedArr[i];
-        }
+        return mergedArray;
     }
 
-    public static void divide(int[] arr, int sIndex, int eIndex) {
-        if (sIndex >= eIndex) {
-            return;
+    // divide part
+    public static int[] divide(int arr[]) {
+        // base case
+        if (arr.length == 1) {
+            return arr;
         }
 
-        int mid = sIndex + (eIndex - sIndex) / 2;
-        divide(arr, sIndex, mid);
-        divide(arr, mid + 1, eIndex);
-        conquer(arr, sIndex, mid, eIndex);
+        // find mid
+        int mid = arr.length / 2;
+        // divided left part
+        int left[] = divide(Arrays.copyOfRange(arr, 0, mid));
+        // divide right part
+        int right[] = divide(Arrays.copyOfRange(arr, mid, arr.length));
+
+        // call concqure function
+        return concqure(left, right);
     }
 
+    // main funciton
     public static void main(String[] args) {
-        int arr[] = { 6, 3, 9, 5, 2, 8 };
-        int size = arr.length;
-
-        divide(arr, 0, size - 1);
+        int arr[] = { 5, 3, 4, 1, 2 };
+        int result[] = divide(arr);
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+            System.out.print(result[i] + " ");
         }
     }
 }

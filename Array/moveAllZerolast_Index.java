@@ -1,27 +1,21 @@
 public class moveAllZerolast_Index {
-
-    private static void moveZero(int arr[]) {
-        int index = 0;
-
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != 0) {
-                arr[index] = arr[i];
-                index++;
-            }
-        }
-
-        while (index < arr.length) {
-            arr[index++] = 0;
-        }
-
-        System.out.print("Arter moving all the zeros at the last index: ");
-        for (int resutl : arr) {
-            System.out.print(resutl + " ");
-        }
+    // conqurer
+    public static void conqurer(int arr[], int si, int mid, int ei) {
+        int newArray[] = new int[ei - si + 1];
     }
 
-    public static void main(String args[]) {
-        int arr[] = { 0, 2, 0, 1, 4, 3, 0, 5, 0, 0 };
-        moveZero(arr);
+    // divide function
+    public static void divide(int arr[], int si, int ei) {
+
+        int mid = si + (ei - si) / 2;
+        divide(arr, si, mid); // first part
+        divide(arr, mid + 1, ei); // secodn part
+        conqurer(arr, si, mid, ei);
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 2, 4, 3, 1, 6, 5, 9, 8, 7 };
+
+        divide(arr, 0, arr.length - 1);
     }
 }
