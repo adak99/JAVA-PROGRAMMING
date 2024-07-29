@@ -10,10 +10,8 @@ public class moveAllZerolast_Index {
             }
         }
 
-        // add 0 at last indes
         while (index < arr.length) {
-            arr[index] = 0;
-            index++;
+            arr[index++] = 0;
         }
 
         System.out.print("Arter moving all the zeros at the last index: ");
@@ -23,7 +21,7 @@ public class moveAllZerolast_Index {
     }
 
     public static void main(String args[]) {
-        int arr[] = { 0, 2, 0, 1, 4, 3, 0, 5, 0 };
+        int arr[] = { 0, 2, 0, 1, 4, 3, 0, 5, 0, 0 };
         moveZero(arr);
     }
 }
