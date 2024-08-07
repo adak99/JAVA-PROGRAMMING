@@ -6,12 +6,13 @@ public class Main {
         while (strIdx <= endIdx) {
             int mid = strIdx + (endIdx - strIdx) / 2;
 
-            if (target < arr[mid])
+            if (target < arr[mid]) {
                 endIdx = mid + 1;
-            else if (target > arr[mid])
+            } else if (target > arr[mid]) {
                 strIdx = mid - 1;
-            else
+            } else {
                 return mid;
+            }
         }
 
         return -1;

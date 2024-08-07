@@ -1,15 +1,15 @@
 //Sorting the array in ascending order using bubble sort
 public class bubbleSort {
 
-    public static void printArray(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+    public static void printArray(int[] arr) {
+        for (int j : arr) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }
 
     public static void main(String[] args) {
-        int arr[] = { 7, 9, 5, 8, 4, 2, 3, 1, 0 };
+        int[] arr = { 7, 9, 5, 8, 4, 2, 3, 1, 0 };
 
         // Bubble short
         for (int i = 0; i < arr.length - 1; i++) {
