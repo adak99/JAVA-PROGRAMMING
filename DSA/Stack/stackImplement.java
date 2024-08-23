@@ -50,7 +50,7 @@ public class stackImplement {
         stack stack = new stack(size); // obj crate
 
         while (true) {
-            System.out.println("\nMenu:");
+            System.out.println("\n\nMenu:");
             System.out.println("1. Push");
             System.out.println("2. pop");
             System.out.println("3. Display");
