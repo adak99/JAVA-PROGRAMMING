@@ -29,6 +29,18 @@ class stack {
         }
     }
 
+    public void clearStack() {
+        if (top == -1) {
+            System.out.println("Stack is empty.");
+        } else {
+            for (int i = 0; i < top + 1; i++) {
+                arr[top] = 0;
+            }
+            top = -1;
+            System.out.println("Clear stack.");
+        }
+    }
+
     public void getData() {
         if (top == -1) {
             System.out.println("The stack is empty");
@@ -53,8 +65,9 @@ public class stackImplement {
             System.out.println("\n\nMenu:");
             System.out.println("1. Push");
             System.out.println("2. pop");
-            System.out.println("3. Display");
-            System.out.println("4. Exit");
+            System.out.println("3. Clear");
+            System.out.println("4. Display");
+            System.out.println("5. Exit");
 
             System.out.print("Enter your choice: ");
             int choice = scan.nextInt();
@@ -72,10 +85,13 @@ public class stackImplement {
                     }
                     break;
                 case 3:
+                    stack.clearStack();
+                    break;
+                case 4:
                     System.out.println("Stack Elements: ");
                     stack.getData();
                     break;
-                case 4:
+                case 5:
                     System.out.println("Exit program.");
                     scan.close();
                     return;
