@@ -40,7 +40,6 @@ class stack {
     }
 
     public int peek(int pos) {
-
         int stackIdx = (top - pos) + 1;
 
         if (stackIdx < 0) {
