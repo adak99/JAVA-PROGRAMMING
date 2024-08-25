@@ -1,9 +1,7 @@
-import java.util.Scanner;
-
 class stack {
-    private int size;
-    private int top;
-    private int[] arr;
+    public int size;
+    public int top;
+    public int[] arr;
 
     stack(int size) {
         this.size = size;
@@ -15,7 +13,7 @@ class stack {
         if (top == size - 1) {
             System.out.println("Stack is over flow " + value + " can't push.");
         } else {
-            System.out.print(value + " push in a stack");
+            System.out.println(value + " push in a stack");
             arr[++top] = value;
         }
     }
@@ -29,75 +27,50 @@ class stack {
         }
     }
 
-    public void clearStack() {
+    public void clear() {
         if (top == -1) {
-            System.out.println("Stack is empty.");
+            System.out.println("Stack is already empty.");
         } else {
-            for (int i = 0; i < top + 1; i++) {
-                arr[top] = 0;
+            for (int i = 0; i <= top; i++) {
+                arr[i] = 0;
             }
             top = -1;
-            System.out.println("Clear stack.");
+            System.out.println("Stack is cleared");
         }
     }
 
-    public void getData() {
-        if (top == -1) {
-            System.out.println("The stack is empty");
+    public int peek(int pos) {
+
+        int stackIdx = (top - pos) + 1;
+
+        if (stackIdx < 0) {
+            System.out.println("Not and valid positon for stack");
+            return -1;
         } else {
-            for (int i = top; i >= 0; i--) {
-                System.out.println(arr[i]);
-            }
+            return arr[stackIdx];
         }
     }
 }
 
 public class stackImplement {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        stack stack = new stack(4); // obj crate
 
-        System.out.print("Enter the size of the stack: ");
-        int size = scan.nextInt();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
 
-        stack stack = new stack(size); // obj crate
+        System.out.println(stack.pop() + " is poped");
 
-        while (true) {
-            System.out.println("\n\nMenu:");
-            System.out.println("1. Push");
-            System.out.println("2. pop");
-            System.out.println("3. Clear");
-            System.out.println("4. Display");
-            System.out.println("5. Exit");
+        stack.clear();
 
-            System.out.print("Enter your choice: ");
-            int choice = scan.nextInt();
-
-            switch (choice) {
-                case 1:
-                    System.out.print("Enter value: ");
-                    int value = scan.nextInt();
-                    stack.push(value);
-                    break;
-                case 2:
-                    int poppedValue = stack.pop();
-                    if (poppedValue != -1) {
-                        System.out.println(poppedValue + " is popped.");
-                    }
-                    break;
-                case 3:
-                    stack.clearStack();
-                    break;
-                case 4:
-                    System.out.println("Stack Elements: ");
-                    stack.getData();
-                    break;
-                case 5:
-                    System.out.println("Exit program.");
-                    scan.close();
-                    return;
-                default:
-                    System.out.println("Try again.");
-                    break;
+        if (stack.top == -1) {
+            System.out.println("Peek function not working");
+        } else {
+            for (int i = 1; i <= stack.top + 1; i++) {
+                System.out.println("Position " + (stack.top - i + 1) + "-> " + stack.peek(i));
             }
         }
     }
