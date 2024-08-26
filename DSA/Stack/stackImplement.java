@@ -63,7 +63,7 @@ public class stackImplement {
 
         System.out.println(stack.pop() + " is poped");
 
-        stack.clear();
+        // stack.clear();
 
         if (stack.top == -1) {
             System.out.println("Peek function not working");
