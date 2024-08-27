@@ -7,20 +7,20 @@ public class sumOfNonDuplicateElementInArray {
         Arrays.sort(arr); // srot array
 
         int idx = 0;
-        int sizeOfNonDuplicateArr = 0;
+        int size = 0;
 
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] != arr[i + 1]) {
                 arr[idx] = arr[i];
                 idx++;
-                sizeOfNonDuplicateArr++;
+                size++;
             }
         }
 
         int sum = 0;
 
         System.out.print("Non duplicate elements: ");
-        for (int i = 0; i < sizeOfNonDuplicateArr; i++) {
+        for (int i = 0; i < size; i++) {
             System.out.print(arr[i] + " ");
             sum += arr[i];
         }
