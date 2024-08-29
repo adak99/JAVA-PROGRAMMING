@@ -31,20 +31,21 @@ public class reverseStringStack {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        Stack stack = new Stack(20);
-
         System.out.print("Enter a string: ");
         String str = scan.nextLine();
+
+        Stack stack = new Stack(20);
 
         for (int i = 0; i < str.length(); i++) {
             stack.push(str.charAt(i));
         }
 
         System.out.print("Reverse string: ");
-        for (int i = 0; i <= stack.top + 1; i++) {
+        while (stack.top != -1) {
             char ch = stack.pop();
             System.out.print(ch);
         }
+
         scan.close();
     }
 }
