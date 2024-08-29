@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 class Stack {
-    private char[] arr;
-    private int top;
+    char[] arr;
+    int top;
 
     public Stack(int size) {
         this.arr = new char[size];
@@ -11,7 +11,7 @@ class Stack {
 
     public void push(char ch) {
         if (top == arr.length - 1) {
-            System.out.println("Stack overflow.");
+            System.out.println("Stack overflow " + ch + " can't push.");
         } else {
             arr[++top] = ch;
         }
@@ -19,7 +19,7 @@ class Stack {
 
     public char pop() {
         if (top == -1) {
-            System.out.println("Stack underflow");
+            System.out.println("\nStack underflow");
             return '\0';
         } else {
             return arr[top--];
@@ -41,7 +41,7 @@ public class reverseStringStack {
         }
 
         System.out.print("Reverse string: ");
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i <= stack.top + 1; i++) {
             char ch = stack.pop();
             System.out.print(ch);
         }
