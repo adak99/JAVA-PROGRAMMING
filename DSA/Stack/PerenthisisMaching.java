@@ -26,18 +26,29 @@ public class PerenthisisMaching {
         return val;
     }
 
+    static boolean match(char a, char b) {
+        if ((a == '(' && b == ')') || (a == '{' && b == '}') || (a == '[' && b == ']'))
+            return true;
+
+        return false;
+    }
+
     public static boolean PerenthisisMaching_fun(String exp) {
         PerenthisisMaching stack = new PerenthisisMaching(100);
 
         for (int i = 0; i < exp.length(); i++) {
-            if (exp.charAt(i) == '(') {
+            if ((exp.charAt(i) == '(') || (exp.charAt(i) == '{') || (exp.charAt(i) == '[')) {
                 stack.push(exp.charAt(i));
-            } else if (exp.charAt(i) == ')') {
+            } else if ((exp.charAt(i) == ')') || (exp.charAt(i) == '}') || (exp.charAt(i) == ']')) {
                 if (stack.top == -1) {
                     System.out.println("Stack is underflow.");
                     return false;
                 }
-                stack.pop();
+
+                char popedChar = stack.pop();
+                if (match(popedChar, exp.charAt(i)) == false) {
+                    return false;
+                }
             }
         }
 
@@ -49,7 +60,7 @@ public class PerenthisisMaching {
 
     public static void main(String[] args) {
 
-        String exp = "(8-1)*(8-2)";
+        String exp = "{a+b}*[(8-1)+(8-1)]";
 
         if (PerenthisisMaching_fun(exp))
             System.out.println("Perenthisis is maching.");
