@@ -26,7 +26,7 @@ public class PerenthisisMaching {
         return val;
     }
 
-    static boolean match(char a, char b) {
+    public static boolean match(char a, char b) {
         if ((a == '(' && b == ')') || (a == '{' && b == '}') || (a == '[' && b == ']'))
             return true;
 
