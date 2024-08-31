@@ -26,10 +26,10 @@ public class PerenthisisMaching {
         return val;
     }
 
-    public static boolean match(char a, char b) {
-        if ((a == '(' && b == ')') || (a == '{' && b == '}') || (a == '[' && b == ']'))
+    public static boolean match(char open, char close) {
+        if ((open == '(' && close == ')') || (open == '{' && close == '}') || (open == '[' && close == ']')) {
             return true;
-
+        }
         return false;
     }
 
@@ -52,19 +52,21 @@ public class PerenthisisMaching {
             }
         }
 
-        if (stack.top == -1)
+        if (stack.top == -1) {
             return true;
-        else
+        } else {
             return false;
+        }
     }
 
     public static void main(String[] args) {
 
         String exp = "{a+b}*[(8-1)+(8-1)]";
 
-        if (PerenthisisMaching_fun(exp))
+        if (PerenthisisMaching_fun(exp)) {
             System.out.println("Perenthisis is maching.");
-        else
+        } else {
             System.out.println("Perenthisis is not maching.");
+        }
     }
 }
