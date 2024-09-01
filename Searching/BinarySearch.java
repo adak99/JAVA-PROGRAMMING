@@ -1,22 +1,20 @@
 public class BinarySearch {
     public static int bianrySearch(int[] arr, int target) {
         int strIdx = 0;
-        int endIdx = arr.length;
+        int endIdx = arr.length - 1;
 
         while (strIdx <= endIdx) {
             int mid = strIdx + (endIdx - strIdx) / 2;
 
             if (target < arr[mid]) {
-                mid = endIdx + 1;
+                endIdx = mid + 1;
             } else if (target > arr[mid]) {
-                mid = strIdx - 1;
+                strIdx = mid - 1;
             } else {
                 return mid;
             }
         }
-
         return -1;
-
     }
 
     public static void main(String[] args) {
