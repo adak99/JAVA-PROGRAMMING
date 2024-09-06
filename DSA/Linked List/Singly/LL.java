@@ -1,33 +1,55 @@
-import java.util.LinkedList;
-
 public class LL {
+    Node head;
 
-    private LinkedList<Integer> list;
+    class Node {
+        int data;
+        Node next;
 
-    public LL() {
-        list = new LinkedList<>();
-    }
-
-    public void insertFirst(int val) {
-        list.addFirst(val);
-    }
-
-    public void display() {
-        for (int value : list) {
-            System.out.print(value + " -> ");
+        Node(int data) {
+            this.data = data;
+            this.next = null;
         }
-        System.out.println("END");
+    }
+
+    // add element in the first
+    public void addFirst(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        newNode.next = head;
+        head = newNode;
+    }
+
+    // add element in the last
+    public void addLast(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+
+        Node currentNode = head;
+        while (currentNode.next != null) {
+            currentNode = currentNode.next;
+        }
+        currentNode.next = newNode;
+
+    }
+
+    // print linked list
+    public void printList() {
+        Node currNode = head;
+        while (currNode != null) {
+            System.out.print(currNode.data + " ");
+            currNode = currNode.next;
+        }
+        System.out.println("NULL");
     }
 
     public static void main(String[] args) {
-        LL n = new LL();
-        n.insertFirst(3);
-        n.insertFirst(4);
-        n.insertFirst(5);
-        n.insertFirst(6);
-        n.insertFirst(7);
-        n.insertFirst(8);
+        LL linkedList = new LL();
 
-        n.display();
     }
 }
