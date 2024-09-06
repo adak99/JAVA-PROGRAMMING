@@ -4,16 +4,16 @@ class parent { // parent class
     int num1;
     int num2;
 
-    void Perentaddtion(int x, int y) {
-        int result = x + y;
-        System.out.println("Perent: " + result);
+    int Parentaddition(int num1, int num2) {
+        this.num1 = num1;
+        this.num2 = num2;
+        return num1 + num2;
     }
 }
 
 class child extends parent { // child class
-    void Childaddtion(int a, int b) {
-        int ans = a + b;
-        System.out.println("Child : " + ans);
+    int addition() {
+        return num1 + num2;
     }
 }
 
@@ -23,7 +23,10 @@ public class SingelInheritence {
         n.num1 = 4;
         n.num2 = 5;
 
-        n.Perentaddtion(n.num1, n.num2);
-        n.Childaddtion(n.num1, n.num2);
+        int perentClass = n.Parentaddition(n.num1, n.num2);
+        int childClass = n.addition();
+
+        System.out.println(perentClass);
+        System.out.println(childClass);
     }
 }
