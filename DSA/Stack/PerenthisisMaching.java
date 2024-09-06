@@ -1,32 +1,26 @@
-public class PerenthisisMaching {
-    int size;
-    int top;
-    char[] arr;
+import java.util.ArrayList;
 
-    PerenthisisMaching(int size) {
-        this.size = size;
-        this.top = -1;
-        this.arr = new char[size];
-    }
+public class PerenthisisMaching {
+    ArrayList<Character> arr = new ArrayList<>();
 
     public void push(char val) {
-        if (top == size - 1) {
+        if (arr.size() == arr.size() - 1) {
             System.out.println("Stack is overflow.");
             return;
         }
-        arr[++top] = val;
+        arr.add(val);
     }
 
     public char pop() {
-        if (top == -1) {
+        if (arr.size() == 0) {
             System.out.println("Stack is underflow.");
             return '\0';
         }
-        char val = arr[top--];
+        char val = arr.remove(arr.size() - 1);
         return val;
     }
 
-    public static boolean match(char open, char close) {
+    public static boolean matching(char open, char close) {
         if ((open == '(' && close == ')') || (open == '{' && close == '}') || (open == '[' && close == ']')) {
             return true;
         }
@@ -34,25 +28,25 @@ public class PerenthisisMaching {
     }
 
     public static boolean PerenthisisMaching_fun(String exp) {
-        PerenthisisMaching stack = new PerenthisisMaching(100);
+        PerenthisisMaching stack = new PerenthisisMaching();
 
         for (int i = 0; i < exp.length(); i++) {
             if ((exp.charAt(i) == '(') || (exp.charAt(i) == '{') || (exp.charAt(i) == '[')) {
                 stack.push(exp.charAt(i));
             } else if ((exp.charAt(i) == ')') || (exp.charAt(i) == '}') || (exp.charAt(i) == ']')) {
-                if (stack.top == -1) {
+                if (stack.arr.size() == 0) {
                     System.out.println("Stack is underflow.");
                     return false;
                 }
 
                 char popedChar = stack.pop();
-                if (match(popedChar, exp.charAt(i)) == false) {
+                if (matching(popedChar, exp.charAt(i)) == false) {
                     return false;
                 }
             }
         }
 
-        if (stack.top == -1) {
+        if (stack.arr.size() == 0) {
             return true;
         } else {
             return false;
