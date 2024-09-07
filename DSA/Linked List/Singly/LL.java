@@ -35,21 +35,32 @@ public class LL {
             currentNode = currentNode.next;
         }
         currentNode.next = newNode;
-
     }
 
     // print linked list
     public void printList() {
-        Node currNode = head;
-        while (currNode != null) {
-            System.out.print(currNode.data + " ");
-            currNode = currNode.next;
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        Node currentNode = head;
+        while (currentNode != null) {
+            System.out.println(currentNode.data + " ");
+            currentNode = currentNode.next;
         }
         System.out.println("NULL");
     }
 
     public static void main(String[] args) {
-        LL linkedList = new LL();
+        LL n = new LL();
 
+        n.addLast(10);
+        n.addLast(20);
+        n.addLast(30);
+        n.addLast(40);
+        n.addLast(50);
+
+        n.printList();
     }
 }
