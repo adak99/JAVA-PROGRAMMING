@@ -11,8 +11,6 @@ public class GCD {
         int n1 = 4;
         int n2 = 13;
 
-        int ans = calGcd(n1, n2);
-
-        System.out.println("GCD of " + n1 + " & " + n2 + " is: " + ans);
+        System.out.println("GCD of " + n1 + " & " + n2 + " is: " + calGcd(n1, n2));
     }
 }
