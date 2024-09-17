@@ -37,6 +37,36 @@ public class Linklist {
         currentNode.next = newNode;
     }
 
+    public void deletFirst() {
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+
+        head = head.next;
+    }
+
+    public void deleteLast() {
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+
+        node secondLastNode = head;
+        node lastNode = head.next;
+
+        while (lastNode.next != null) {
+            lastNode = lastNode.next;
+            secondLastNode = secondLastNode.next;
+        }
+        secondLastNode.next = null;
+    }
+
     public void printLL() { // print list
         if (head == null) {
             System.out.println("List is empty.");
@@ -51,6 +81,14 @@ public class Linklist {
     }
 
     public static void main(String[] args) {
+        Linklist a = new Linklist();
+        a.addLast(10);
+        a.addLast(30);
+        a.addLast(40);
+        a.addLast(20);
 
+        a.deleteLast();
+
+        a.printLL();
     }
 }
