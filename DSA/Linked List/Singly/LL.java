@@ -1,5 +1,5 @@
 public class LL {
-    Node head;
+    private Node head = null;
 
     class Node {
         int data;
