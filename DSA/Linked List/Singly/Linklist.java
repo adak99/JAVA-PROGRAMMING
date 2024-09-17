@@ -10,31 +10,35 @@ class node {
 
 public class Linklist {
     private node head = null;
+    private int size;
+
+    Linklist() {
+        this.size = 0;
+    }
 
     public void addFirst(int data) { // add elements at the first
         node newNode = new node(data);
         if (head == null) {
             head = newNode;
-            return;
+        } else {
+            newNode.next = head;
+            head = newNode;
         }
-
-        newNode.next = head;
-        head = newNode;
+        size++;
     }
 
     public void addLast(int data) { // add elements at the last
         node newNode = new node(data);
         if (head == null) {
             head = newNode;
-            return;
+        } else {
+            node currentNode = head;
+            while (currentNode.next != null) {
+                currentNode = currentNode.next;
+            }
+            currentNode.next = newNode;
         }
-
-        node currentNode = head;
-        while (currentNode.next != null) {
-            currentNode = currentNode.next;
-        }
-
-        currentNode.next = newNode;
+        size++;
     }
 
     public void deletFirst() {
@@ -44,6 +48,7 @@ public class Linklist {
         }
 
         head = head.next;
+        size--;
     }
 
     public void deleteLast() {
@@ -54,17 +59,17 @@ public class Linklist {
 
         if (head.next == null) {
             head = null;
-            return;
-        }
+        } else {
+            node secondLastNode = head;
+            node lastNode = head.next;
 
-        node secondLastNode = head;
-        node lastNode = head.next;
-
-        while (lastNode.next != null) {
-            lastNode = lastNode.next;
-            secondLastNode = secondLastNode.next;
+            while (lastNode.next != null) {
+                lastNode = lastNode.next;
+                secondLastNode = secondLastNode.next;
+            }
+            secondLastNode.next = null;
         }
-        secondLastNode.next = null;
+        size--;
     }
 
     public void printLL() { // print list
@@ -80,6 +85,10 @@ public class Linklist {
         }
     }
 
+    public int getSize() {
+        return size;
+    }
+
     public static void main(String[] args) {
         Linklist a = new Linklist();
         a.addLast(10);
@@ -88,6 +97,8 @@ public class Linklist {
         a.addLast(20);
 
         a.deleteLast();
+
+        System.out.println(a.getSize());
 
         a.printLL();
     }
