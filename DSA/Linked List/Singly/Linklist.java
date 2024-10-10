@@ -1,19 +1,19 @@
-class node {
+class Node {
     int data;
-    node next;
+    Node next;
 
-    node(int data) {
+    Node(int data) {
         this.data = data;
         this.next = null;
     }
 }
 
 public class Linklist {
-    private static node head = null;
+    private static Node head = null;
     private static int size = 0;
 
     public static void addFirst(int data) { // add first
-        node newNode = new node(data);
+        Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
             size++;
@@ -26,14 +26,14 @@ public class Linklist {
     }
 
     public static void addLast(int data) { // add last
-        node newNode = new node(data);
+        Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
             size++;
             return;
         }
 
-        node currNode = head;
+        Node currNode = head;
         while (currNode.next != null) {
             currNode = currNode.next;
         }
@@ -64,8 +64,8 @@ public class Linklist {
             return;
         }
 
-        node secondLastNode = head;
-        node lastNode = head.next;
+        Node secondLastNode = head;
+        Node lastNode = head.next;
 
         while (lastNode.next != null) {
             lastNode = lastNode.next;
@@ -81,7 +81,7 @@ public class Linklist {
             return;
         }
 
-        node currentNode = head;
+        Node currentNode = head;
         while (currentNode != null) {
             System.out.println(currentNode.data + " ");
             currentNode = currentNode.next;
