@@ -58,9 +58,9 @@ public class Linklist {
             return;
         }
 
+        size--;
         if (head.next == null) {
             head = null;
-            size--;
             return;
         }
 
@@ -72,7 +72,6 @@ public class Linklist {
             secondLastNode = secondLastNode.next;
         }
         secondLastNode.next = null;
-        size--;
     }
 
     public static void printLL() { // print list
