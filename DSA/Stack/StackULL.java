@@ -9,78 +9,59 @@ class Node {
 }
 
 public class StackULL {
-    private Node top;
+    public static Node top = null;
 
-    StackULL() {
-        this.top = null;
-    }
-
-    public boolean isEmpty() {
+    public static boolean isEmpty() {
         return top == null;
     }
 
-    public void push(int data) {
+    public static void push(int data) {
         Node newNode = new Node(data);
         newNode.next = top;
         top = newNode;
-        System.out.println(data + " is push");
     }
 
-    public int pop() {
+    public static int pop() {
         if (isEmpty()) {
-            System.out.println("Stack is underflow.");
+            System.out.println("Stack is emplty.");
             return -1;
         }
 
         int popValue = top.data;
         top = top.next;
-        System.out.println(popValue + " is pop.");
         return popValue;
     }
 
-    public int peek() {
+    public static int peek() {
         if (isEmpty()) {
-            System.out.println("Stack is underflow.");
+            System.out.println("Stack is emplty.");
             return -1;
         }
 
         return top.data;
     }
 
-    public void display() {
+    public static void display() {
         if (isEmpty()) {
-            System.out.println("Stack is empty.");
-            return;
+            System.out.println("Stack is emplty.");
         }
 
-        System.out.print("Stack elemetns: ");
-        Node currNode = top;
-        while (currNode != null) {
-            System.out.print(currNode.data + " ");
-            currNode = currNode.next;
+        Node currentNode = top;
+        while (currentNode != null) {
+            System.out.println(currentNode.data);
+            currentNode = currentNode.next;
         }
-        System.out.println();
     }
 
     public static void main(String[] args) {
-        StackULL stack = new StackULL();
+        push(10);
+        push(20);
+        push(30);
+        push(40);
 
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
+        System.out.println("Pop: " + pop());
+        System.out.println("Peek:- " + peek());
 
-        stack.display();
-
-        System.out.println("Top element is: " + stack.peek());
-
-        stack.pop();
-        stack.display();
-        stack.pop();
-        stack.display();
-
-        stack.pop();
-        stack.display();
-
-        stack.pop();
+        display();
     }
 }
