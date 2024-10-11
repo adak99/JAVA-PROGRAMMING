@@ -18,8 +18,10 @@ class Stack {
     }
 
     public void push(int data) {
-        if (isFull())
+        if (isFull()) {
             System.out.println("Stack over flow.");
+            return;
+        }
 
         arr.add(data);
     }
@@ -39,6 +41,15 @@ class Stack {
         }
         return arr.get(arr.size() - 1);
     }
+
+    public void display() {
+        if (isEmpty())
+            System.out.println("Stack is empyt.");
+
+        for (int i = arr.size() - 1; i >= 0; i--) {
+            System.out.println(arr.get(i));
+        }
+    }
 }
 
 public class StackImplementArr {
@@ -49,6 +60,8 @@ public class StackImplementArr {
         n.push(20);
         n.push(30);
         n.push(40);
+
+        // n.display();
 
         while (!n.isEmpty()) {
             System.out.println("Peek: " + n.peek());
