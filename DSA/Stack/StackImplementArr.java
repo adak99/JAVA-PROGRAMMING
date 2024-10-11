@@ -1,61 +1,58 @@
 import java.util.ArrayList;
 
-public class StackImplementArr {
-    static class Stack {
-        public int size;
+class Stack {
+    private int size;
 
-        public Stack(int size) {
-            this.size = size;
-        }
-
-        ArrayList<Integer> list = new ArrayList<>(size);
-
-        public boolean isFull() {
-            return list.size() == size;
-        }
-
-        public boolean isEmpty() {
-            return list.size() == 0;
-        }
-
-        public void push(int val) {
-            if (isFull()) {
-                System.out.println("Stack Overflow.");
-            }
-            list.add(val);
-        }
-
-        public int pop() {
-            if (isEmpty()) {
-                System.out.println("Stack is empty.");
-                return -1;
-            }
-            int top = list.remove(list.size() - 1);
-            return top;
-        }
-
-        public int peek() {
-            if (isEmpty()) {
-                System.out.println("Stack is empty.");
-                return -1;
-            }
-            return list.get(list.size() - 1);
-        }
+    Stack(int size) {
+        this.size = size;
     }
 
+    ArrayList<Integer> arr = new ArrayList<>(size);
+
+    public boolean isFull() {
+        return arr.size() == size;
+    }
+
+    public boolean isEmpty() {
+        return arr.size() == 0;
+    }
+
+    public void push(int data) {
+        if (isFull())
+            System.out.println("Stack over flow.");
+
+        arr.add(data);
+    }
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        return arr.remove(arr.size() - 1);
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        return arr.get(arr.size() - 1);
+    }
+}
+
+public class StackImplementArr {
     public static void main(String[] args) {
-        Stack stack = new Stack(100);
+        Stack n = new Stack(3);
 
-        stack.push(10);
-        stack.push(30);
-        stack.push(40);
-        stack.push(50);
+        n.push(10);
+        n.push(20);
+        n.push(30);
+        n.push(40);
 
-        int idx = 4;
-        while (!stack.isEmpty()) {
-            System.out.println("Positon " + idx + ": " + stack.peek());
-            idx--;
-            stack.pop();
+        while (!n.isEmpty()) {
+            System.out.println("Peek: " + n.peek());
+            n.pop();
         }
     }
 }
