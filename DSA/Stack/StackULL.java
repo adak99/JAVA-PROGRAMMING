@@ -19,7 +19,7 @@ public class StackULL {
 
     public static int pop() {
         if (top == null) {
-            System.out.println("Stack is emplty.");
+            System.out.println("Stack is empty.");
             return -1;
         }
 
@@ -30,7 +30,7 @@ public class StackULL {
 
     public static int peek() {
         if (top == null) {
-            System.out.println("Stack is emplty.");
+            System.out.println("Stack is empty.");
             return -1;
         }
 
@@ -39,7 +39,7 @@ public class StackULL {
 
     public static void display() {
         if (top == null) {
-            System.out.println("Stack is emplty.");
+            System.out.println("Stack is empty.");
         }
 
         Node currentNode = top;
