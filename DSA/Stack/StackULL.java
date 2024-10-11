@@ -9,11 +9,7 @@ class Node {
 }
 
 public class StackULL {
-    public static Node top = null;
-
-    public static boolean isEmpty() {
-        return top == null;
-    }
+    public static Node top = null; // top decleard as a global variable
 
     public static void push(int data) {
         Node newNode = new Node(data);
@@ -22,7 +18,7 @@ public class StackULL {
     }
 
     public static int pop() {
-        if (isEmpty()) {
+        if (top == null) {
             System.out.println("Stack is emplty.");
             return -1;
         }
@@ -33,7 +29,7 @@ public class StackULL {
     }
 
     public static int peek() {
-        if (isEmpty()) {
+        if (top == null) {
             System.out.println("Stack is emplty.");
             return -1;
         }
@@ -42,7 +38,7 @@ public class StackULL {
     }
 
     public static void display() {
-        if (isEmpty()) {
+        if (top == null) {
             System.out.println("Stack is emplty.");
         }
 
