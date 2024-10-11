@@ -9,7 +9,7 @@ class Node {
 }
 
 public class StackULL {
-    public static Node top = null; // top decleard as a global variable
+    public static Node top = null; // top declared as a global variable
 
     public static void push(int data) {
         Node newNode = new Node(data);

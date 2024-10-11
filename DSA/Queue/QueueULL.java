@@ -9,12 +9,8 @@ class node {
 }
 
 public class QueueULL {
-    private node front;
-    private node rear;
-
-    QueueULL() {
-        this.front = this.rear = null;
-    }
+    private static node front = null;
+    private static node rear = null;
 
     public boolean isEmpty() {
         return front == null;
