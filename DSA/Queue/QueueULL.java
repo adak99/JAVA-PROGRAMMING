@@ -1,53 +1,46 @@
-class node {
+class Node {
     int data;
-    node next;
+    Node next;
 
-    node(int data) {
+    Node(int data) {
         this.data = data;
         this.next = null;
     }
 }
 
 public class QueueULL {
-    private static node front = null;
-    private static node rear = null;
+    public static Node front = null;
+    public static Node rear = null;
 
-    public boolean isEmpty() {
-        return front == null;
-    }
+    public static void enqueue(int data) { // enqueue
+        Node newNode = new Node(data);
 
-    // endqueue
-    public void enqueue(int data) {
-        node newNode = new node(data);
         if (rear == null) {
             front = rear = newNode;
-            System.out.println("Enqueue: " + data);
             return;
         }
 
         rear.next = newNode;
         rear = newNode;
-        System.out.println("Enqueue: " + data);
     }
 
-    // dequeue
-    public int dequeque() {
-        if (isEmpty()) {
+    public static int dequeue() { // dequeue
+        if (rear == null) {
             System.out.println("Queue is empty.");
             return -1;
         }
 
-        int frontValue = front.data;
+        int frontVal = front.data;
         front = front.next;
 
-        if (front == null) {
+        if (front == null)
             rear = null;
-        }
-        return frontValue;
+
+        return frontVal;
     }
 
-    public int peek() {
-        if (isEmpty()) {
+    public static int peek() { // peek
+        if (rear == null) {
             System.out.println("Queue is empty.");
             return -1;
         }
@@ -55,17 +48,31 @@ public class QueueULL {
         return front.data;
     }
 
-    public static void main(String[] args) {
-        QueueULL q = new QueueULL();
-
-        for (int i = 10; i <= 40; i += 10) {
-            q.enqueue(i);
+    public static void display() { // display
+        if (rear == null) {
+            System.out.println("Queue is empty.");
         }
 
-        System.out.print("Queue Elements: ");
-        while (!q.isEmpty()) {
-            System.out.print(q.peek() + " ");
-            q.dequeque();
+        Node currentNode = front;
+        while (currentNode != null) {
+            System.out.println(currentNode.data);
+            currentNode = currentNode.next;
+        }
+    }
+
+    public static void main(String[] args) {
+        for (int i = 10; i <= 50; i += 10)
+            enqueue(i);
+
+        System.out.println("Display->");
+        display();
+
+        System.out.println("Dequeue-> " + dequeue());
+
+        System.out.println("Peek->");
+        while (front != null) {
+            System.out.println(peek());
+            dequeue();
         }
     }
 }
