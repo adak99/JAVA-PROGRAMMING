@@ -14,7 +14,7 @@ public class removeVowels {
                 resutl.append(ch);
             }
         }
-        System.out.println(resutl);
+        System.out.println(resutl.toString());
     }
 
     public static void method_2(String str) {
@@ -26,7 +26,7 @@ public class removeVowels {
                 result.append(ch);
             }
         }
-        System.out.println(result);
+        System.out.println(result.toString());
     }
 
     public static void method_3(String str) {
@@ -46,7 +46,7 @@ public class removeVowels {
             }
         }
 
-        System.out.println(resutl);
+        System.out.println(resutl.toString());
     }
 
     public static void main(String[] args) {
