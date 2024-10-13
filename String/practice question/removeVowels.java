@@ -1,5 +1,4 @@
 import java.util.HashSet;
-import java.util.Set;
 
 public class removeVowels {
     public static void method_1(String str) {
@@ -32,7 +31,7 @@ public class removeVowels {
     public static void method_3(String str) {
         StringBuilder resutl = new StringBuilder();
 
-        Set<Character> vowle = new HashSet<>();
+        HashSet<Character> vowle = new HashSet<>();
         char vol[] = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
 
         for (int i = 0; i < vol.length; i++) {
