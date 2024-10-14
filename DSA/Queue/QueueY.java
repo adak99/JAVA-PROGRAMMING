@@ -32,12 +32,12 @@ public class QueueY {
                 return -1;
             }
 
-            int fornt = arr[0];
+            int front = arr[0];
             for (int i = 0; i < rear; i++) {
                 arr[i] = arr[i + 1];
             }
             rear--;
-            return fornt;
+            return front;
         }
 
         public int peek() {

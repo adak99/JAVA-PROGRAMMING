@@ -1,4 +1,4 @@
-public class CercularQueueUarr {
+public class CircularQueueUarr {
     static class queue {
         static int[] arr;
         static int size;
