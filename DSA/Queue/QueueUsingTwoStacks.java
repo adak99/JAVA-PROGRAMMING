@@ -10,15 +10,13 @@ public class QueueUsingTwoStacks {
         }
 
         public void add(int data) {
-            while (!s1.isEmpty()) {
+            while (!s1.isEmpty())
                 s2.push(s1.pop());
-            }
 
             s1.push(data);
 
-            while (!s2.isEmpty()) {
+            while (!s2.isEmpty())
                 s1.push(s2.pop());
-            }
         }
 
         public int remove() {
