@@ -45,7 +45,7 @@ public class QueueUsingTwoStacks {
                 return;
             }
 
-            System.out.println("Queue contents:");
+            System.out.println("Queue contents: ");
             for (int i = s1.size() - 1; i >= 0; i--) {
                 System.out.println(s1.get(i));
             }
