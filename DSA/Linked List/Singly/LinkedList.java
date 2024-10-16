@@ -8,7 +8,7 @@ class Node {
     }
 }
 
-public class Linklist {
+public class LinkedList {
     private static Node head = null;
     private static int size = 0;
 
@@ -23,6 +23,34 @@ public class Linklist {
         newNode.next = head;
         head = newNode;
         size++;
+    }
+
+    public static void addMid(int data) { // add mid
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            head = newNode;
+            size++;
+            return;
+        }
+
+        if (size == 1) { // if list have a single node
+            head.next = newNode;
+            size++;
+            return;
+        }
+
+        int mid = size / 2;
+        Node currNode = head;
+
+        for (int i = 0; i < mid - 1; i++) {
+            currNode = currNode.next;
+        }
+
+        newNode.next = currNode.next;
+        currNode.next = newNode;
+        size++;
+
     }
 
     public static void addLast(int data) { // add last
@@ -50,6 +78,29 @@ public class Linklist {
 
         size--;
         head = head.next;
+    }
+
+    public static void deleteMid() {
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+
+        int mid = size / 2;
+
+        if (mid == 0) { // If only one element, just delete the head
+            deleteFirst();
+            size--;
+            return;
+        }
+
+        Node currNode = head;
+        for (int i = 0; i < mid - 1; i++) {
+            currNode = currNode.next;
+        }
+
+        currNode.next = currNode.next.next;
+        size--;
     }
 
     public static void deleteLast() { // delete last
