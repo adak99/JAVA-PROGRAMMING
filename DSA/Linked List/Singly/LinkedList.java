@@ -147,6 +147,7 @@ public class LinkedList {
         addLast(10);
         addLast(20);
         addLast(30);
+        addMid(40);
         printLL();
         System.out.println("Total size of the list is: " + getSize());
     }
