@@ -1,5 +1,66 @@
 import java.util.Arrays;
+import java.util.LinkedList;
 
+// using java collection frame work
+class Linked_List {
+    private LinkedList<int[][]> list = new LinkedList<>();
+
+    public void addAtFirst(int[][] data) { // add first
+        list.addFirst(data);
+    }
+
+    public void addAtMid(int[][] data) { // add mid
+        if (list.isEmpty()) {
+            list.add(data);
+        }
+
+        int mid = list.size() / 2;
+        list.add(mid, data);
+    }
+
+    public void addAtLast(int[][] data) { // add first
+        list.addLast(data);
+    }
+
+    public void deleteAtFirst() { // delete at first
+        if (list.isEmpty()) {
+            System.out.println("List is empty.");
+            return;
+        }
+        list.remove();
+    }
+
+    public void deleteAtMid() { // delete at mid
+        if (list.isEmpty()) {
+            System.out.println("List is empty.");
+            return;
+        }
+        int mid = list.size() / 2;
+        list.remove(mid);
+    }
+
+    public void deleteAtLast() { // delete at last
+        if (list.isEmpty()) {
+            System.out.println("List is empty.");
+            return;
+        }
+        list.removeLast();
+    }
+
+    public void printLL() { // printlist
+        if (list.isEmpty()) {
+            System.out.println("List is empty.");
+            return;
+        }
+
+        for (int[][] data : list) {
+            System.out.print(Arrays.deepToString(data) + "->");
+        }
+        System.out.print("NULL");
+    }
+}
+
+// Using Normal
 class Node {
     int[][] data;
     Node next;
@@ -145,10 +206,12 @@ public class TowDarrayLL {
             System.out.print(Arrays.deepToString(currNode.data) + "->");
             currNode = currNode.next;
         }
+        System.out.print("NULL");
     }
 
     public static void main(String[] args) {
         TowDarrayLL n = new TowDarrayLL(3, 3);
+        Linked_List list = new Linked_List();
 
         int[][] a = {
                 { 10, 20, 30 },
@@ -177,5 +240,14 @@ public class TowDarrayLL {
         addMid(c);
 
         printLL();
+
+        System.out.println("Using Java Framework->");
+        // using collection frame work
+        // function calls ////_____________________
+        list.addAtFirst(a);
+        list.addAtLast(c);
+        list.addAtMid(c);
+
+        list.printLL();
     }
 }
