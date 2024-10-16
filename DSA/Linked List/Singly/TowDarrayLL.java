@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Node {
     int[][] data;
     Node next;
@@ -140,14 +142,7 @@ public class TowDarrayLL {
 
         Node currNode = head;
         while (currNode != null) {
-            for (int i = 0; i < row; i++) {
-                for (int j = 0; j < col; j++) {
-                    System.out.print(currNode.data[i][i] + " ");
-                }
-                System.out.println();
-            }
-            System.out.println("||");
-
+            System.out.print(Arrays.deepToString(currNode.data) + "->");
             currNode = currNode.next;
         }
     }
