@@ -1,3 +1,5 @@
+//import java.util.Scanner;
+
 class Node {
     int data;
     Node next;
@@ -50,7 +52,39 @@ public class LinkedList {
         newNode.next = currNode.next;
         currNode.next = newNode;
         size++;
+    }
 
+    public static void addAtPosition(int data, int pos) {
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            head = newNode;
+            size++;
+            return;
+        }
+
+        if (head.next == null) {
+            head.next = newNode;
+            size++;
+            return;
+        }
+        if (pos == 1) {
+            newNode.next = head;
+            head = newNode;
+            size++;
+            return;
+        }
+
+        Node currNode = head;
+
+        for (int i = 0; i < pos - 1; i++) {
+            currNode = currNode.next;
+        }
+
+        newNode.next = currNode.next;
+        currNode.next = newNode;
+        size++;
+        System.out.println(data + "will be added");
     }
 
     public static void addLast(int data) { // add last
@@ -103,6 +137,27 @@ public class LinkedList {
         size--;
     }
 
+    public static void deleteAtPos(int pos) {
+        if (head == null) {
+            System.out.println("This list is empty.");
+            return;
+        }
+
+        if (pos == 0) {
+            deleteFirst();
+            size--;
+            return;
+        }
+
+        Node currNode = head;
+        for (int i = 0; i < pos - 1; i++) {
+            currNode = currNode.next;
+        }
+
+        currNode.next = currNode.next.next;
+        size--;
+    }
+
     public static void deleteLast() { // delete last
         if (head == null) {
             System.out.println("This list empty.");
@@ -145,9 +200,9 @@ public class LinkedList {
 
     public static void main(String[] args) {
         addLast(10);
-        addLast(20);
+        addAtPosition(20, 2);
         addLast(30);
-        addMid(40);
+        addAtPosition(40, 3);
         printLL();
         System.out.println("Total size of the list is: " + getSize());
     }
