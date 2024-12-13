@@ -4,9 +4,8 @@ public class Main {
     public static int[] concqure(int[] left, int[] right) {
         int[] newArr = new int[left.length + right.length];
 
-        int i = 0; // indicate left array index
-        int j = 0; // indicates right array index
-        int k = 0; // indicates new array index
+        int i, j, k;
+        i = j = k = 0;
 
         while (i < left.length && j < right.length) {
             if (left[i] < right[j]) {
@@ -26,7 +25,6 @@ public class Main {
         }
 
         return newArr;
-
     }
 
     public static int[] divided(int[] arr) {
