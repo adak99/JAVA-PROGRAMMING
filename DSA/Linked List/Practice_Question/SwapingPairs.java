@@ -1,63 +1,70 @@
-public class SwapingPairs {
-    public static void main(String[] args) {
-        addItems(10);
-        addItems(20);
-        addItems(30);
-        addItems(40);
+class Node {
+    long data;
+    Node next;
 
-        head = swapPairs(head);
-        printLL();
+    Node(long data) {
+        this.data = data;
+        this.next = null;
     }
+}
 
-    public static Node head = null;
+public class SwapingPairs {
+    private static Node head = null;
 
-    public static void addItems(int data) {
+    public static void add(long data) {
         Node newNode = new Node(data);
+
         if (head == null) {
             head = newNode;
             return;
         }
 
-        Node currNode = head;
-        while (currNode.next != null) {
-            currNode = currNode.next;
+        Node currentNode = head;
+        while (currentNode.next != null) {
+            currentNode = currentNode.next;
         }
 
-        currNode.next = newNode;
+        currentNode.next = newNode;
     }
 
     public static void printLL() {
         if (head == null) {
-            System.out.println("List is empty.");
-            return;
+            System.out.println("List id empty.");
         }
 
-        Node currNode = head;
-        while (currNode != null) {
-            System.out.print(currNode.data + " -> ");
-            currNode = currNode.next;
+        Node curretNode = head;
+        while (curretNode != null) {
+            System.out.print(curretNode.data + " ");
+            curretNode = curretNode.next;
         }
-        System.out.println("NULL");
     }
 
-    public static Node swapPairs(Node head) {
-        if (head == null || head.next == null)
-            return head;
+    public static Node swapingPairs(Node node) {
+        if (node == null || node.next == null) {
+            return node;
+        }
 
-        Node firstNode = head;
-        Node sechNode = head.next;
-        firstNode.next = swapPairs(sechNode.next);
-        sechNode.next = firstNode;
-        return sechNode;
+        Node firstNode = node;
+        Node secondNode = node.next;
+
+        firstNode.next = swapingPairs(secondNode.next);
+        secondNode.next = firstNode;
+
+        return secondNode;
     }
-}
 
-class Node {
-    int data;
-    Node next;
+    public static void main(String[] args) {
 
-    Node(int data) {
-        this.data = data;
-        this.next = null;
+        add(10);
+        add(20);
+        add(30);
+        add(40);
+        add(50);
+        add(60);
+
+        head = swapingPairs(head);
+
+        printLL();
+
     }
 }
