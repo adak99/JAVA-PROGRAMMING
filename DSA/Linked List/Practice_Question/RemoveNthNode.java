@@ -85,7 +85,7 @@ public class RemoveNthNode {
     }
 
     public static Node removeNthNode(int n) {
-        if (head.next == null) {
+        if (head == null || head.next == null || n == 1) {
             return head;
         }
 
