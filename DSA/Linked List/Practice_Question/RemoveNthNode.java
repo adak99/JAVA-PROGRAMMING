@@ -10,7 +10,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-// using collection frame work
+// using collection framework
 class RemoveNode {
     public List<Integer> removeNode(List<Integer> list, int n) {
         List<Integer> newList = new LinkedList<>();
