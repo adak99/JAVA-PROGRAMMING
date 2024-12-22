@@ -1,3 +1,31 @@
+// check if a linkedlist if palindrome or not
+
+import java.util.List;
+import java.util.LinkedList;
+
+class CheckListIsPalindromeOrNot {
+    public static List<Integer> list = new LinkedList<>();
+
+    public static void addNode(int data) {
+        list.add(data);
+    }
+
+    public static boolean isPalindrome() {
+        int start = 0;
+        int end = list.size() - 1;
+
+        while (start < end) {
+            if (!list.get(start).equals(list.get(end))) {
+                return false;
+            }
+            start++;
+            end--;
+        }
+
+        return true;
+    }
+}
+
 public class PalindromeOrNot {
     // This node class
     public static class Node {
@@ -93,3 +121,5 @@ public class PalindromeOrNot {
         }
     }
 }
+
+// using java collection frame work
