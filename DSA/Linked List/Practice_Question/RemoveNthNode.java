@@ -15,8 +15,8 @@ class RemoveNode {
     public List<Integer> removeNode(List<Integer> list, int n) {
         List<Integer> newList = new LinkedList<>();
 
-        if (list.get(1) == null) {
-            return newList;
+        if (list.get(1) == null || list.isEmpty() || n == 1) {
+            return list;
         }
 
         if (list.size() == n) {
