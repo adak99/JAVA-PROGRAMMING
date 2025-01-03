@@ -34,15 +34,13 @@ public class removeVowels {
         HashSet<Character> vowels = new HashSet<>();
         char vol[] = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
 
-        for (int i = 0; i < vol.length; i++) {
-            vowels.add(vol[i]);
+        for (char ch : vol) {
+            vowels.add(ch);
         }
 
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if (!vowels.contains(ch)) {
-                resutl.append(ch);
-            }
+            resutl.append((!vowels.contains(ch)) ? ch : "");
         }
 
         System.out.println(resutl.toString());
