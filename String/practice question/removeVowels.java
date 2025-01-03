@@ -31,16 +31,16 @@ public class removeVowels {
     public static void method_3(String str) {
         StringBuilder resutl = new StringBuilder();
 
-        HashSet<Character> vowle = new HashSet<>();
+        HashSet<Character> vowels = new HashSet<>();
         char vol[] = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
 
         for (int i = 0; i < vol.length; i++) {
-            vowle.add(vol[i]);
+            vowels.add(vol[i]);
         }
 
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if (!vowle.contains(ch)) {
+            if (!vowels.contains(ch)) {
                 resutl.append(ch);
             }
         }
