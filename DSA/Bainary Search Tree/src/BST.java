@@ -51,22 +51,25 @@ public class BST {
         }
     }
 
-    // delete node
+    // delte root
     public static Node delete(Node root, int key) {
         if (root.data > key) {
             root.left = delete(root.left, key);
-        } else if (root.data < key) {
+        } else if (root.data > key) {
             root.right = delete(root.right, key);
-        } else {
+        } else { // root.data == value
+            // case 1
             if (root.left == null && root.right == null) {
                 return null;
             }
-
+            // case 2
             if (root.left == null) {
                 return root.right;
             } else if (root.right == null) {
                 return root.left;
-            } else {
+            }
+            // case 3
+            else {
                 Node inorderSuccessor = inorderSuccessor(root.right);
                 root.data = inorderSuccessor.data;
                 root.right = delete(root.right, inorderSuccessor.data);
@@ -76,6 +79,7 @@ public class BST {
         return root;
     }
 
+    // inorder successor
     public static Node inorderSuccessor(Node root) {
         while (root.left != null) {
             root = root.left;
