@@ -12,8 +12,7 @@ public class BST {
     // insert node
     public static Node insert(Node root, int val) {
         if (root == null) {
-            root = new Node(val);
-            return root;
+            return new Node(val);
         }
 
         if (root.data > val) {
@@ -55,7 +54,7 @@ public class BST {
     public static Node delete(Node root, int key) {
         if (root.data > key) {
             root.left = delete(root.left, key);
-        } else if (root.data > key) {
+        } else if (root.data < key) {
             root.right = delete(root.right, key);
         } else { // root.data == value
             // case 1
@@ -101,10 +100,11 @@ public class BST {
         delete(root, 4);
 
         if (search(root, 4)) {
-            System.out.println("\n7 is found.");
+            System.out.println("\nFound");
         } else {
-            System.out.println("\nNot exit.");
+            System.out.println("\nNot Found.");
         }
 
+        inorder(root);
     }
 }
