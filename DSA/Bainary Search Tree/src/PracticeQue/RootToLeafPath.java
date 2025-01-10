@@ -25,10 +25,6 @@ public class RootToLeafPath {
         return root;
     }
 
-    public static void printPath(ArrayList<Integer> path) {
-        System.out.println(path);
-    }
-
     public static void rootToLeafPath(Node root, ArrayList<Integer> path) {
         if (root == null) {
             return;
@@ -37,7 +33,7 @@ public class RootToLeafPath {
         path.add(root.data);
 
         if (root.left == null && root.right == null) {
-            printPath(path);
+            System.out.println(path);
         } else {
             rootToLeafPath(root.left, path);
             rootToLeafPath(root.right, path);
