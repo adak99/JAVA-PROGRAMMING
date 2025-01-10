@@ -26,10 +26,7 @@ public class RootToLeafPath {
     }
 
     public static void printPath(ArrayList<Integer> path) {
-        for (int key : path) {
-            System.out.print(key + "->");
-        }
-        System.out.println();
+        System.out.println(path);
     }
 
     public static void rootToLeafPath(Node root, ArrayList<Integer> path) {
