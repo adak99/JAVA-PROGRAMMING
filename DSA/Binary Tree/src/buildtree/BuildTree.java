@@ -3,12 +3,12 @@ package buildtree;
 import createNode.Node;
 
 public class BuildTree {
-    static int idx = -1;
 
-    // build tree
+    public static int idx = -1;
+
     public Node buildTree(int[] nodes) {
         idx++;
-        if (nodes[idx] == -1 || idx >= nodes.length) {
+        if (idx >= nodes.length || nodes[idx] == -1) {
             return null;
         }
 
@@ -18,4 +18,5 @@ public class BuildTree {
 
         return newNode;
     }
+
 }
