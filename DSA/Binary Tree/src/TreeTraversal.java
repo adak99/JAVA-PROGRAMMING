@@ -1,35 +1,10 @@
 import java.util.Queue;
 import java.util.LinkedList;
 
-class Node {
-    long data;
-    Node left;
-    Node right;
-
-    public Node(long data) {
-        this.data = data;
-    }
-}
+import createNode.Node;
+import buildtree.BuildTree;
 
 public class TreeTraversal {
-    public static class BuildTree {
-        static int idx = -1;
-
-        // build tree
-        public Node buildTree(long[] nodes) {
-            idx++;
-            if (nodes[idx] == -1 || idx >= nodes.length) {
-                return null;
-            }
-
-            Node newNode = new Node(nodes[idx]);
-            newNode.left = buildTree(nodes);
-            newNode.right = buildTree(nodes);
-
-            return newNode;
-        }
-    }
-
     // preorder traversal
     public static void preorder(Node root) {
         if (root == null) {
@@ -97,7 +72,7 @@ public class TreeTraversal {
     }
 
     public static void main(String[] args) {
-        long[] nodes = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
+        int[] nodes = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         BuildTree tree = new BuildTree();
         Node root = tree.buildTree(nodes);
 
