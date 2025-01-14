@@ -18,19 +18,6 @@ public class MyFunctions {
         return Math.max(leftHeight, rightHeight) + 1;
     }
 
-    // Diameter of the tree
-    public int diameter(Node root) {
-        if (root == null) {
-            return 0;
-        }
-
-        int diameter1 = diameter(root.left);
-        int diameter2 = diameter(root.right);
-        int diameter3 = height(root.left) + height(root.right) + 1;
-
-        return Math.max(diameter3, Math.max(diameter1, diameter2));
-    }
-
     // Preorder Traversal
     public void preorder(Node root) {
         if (root == null) {
@@ -54,7 +41,7 @@ public class MyFunctions {
     }
 
     // postorder traversal
-    public static void postorder(Node root) {
+    public void postorder(Node root) {
         if (root == null) {
             return;
         }
@@ -65,7 +52,7 @@ public class MyFunctions {
     }
 
     // level order traversal
-    public static void levelorder(Node root) {
+    public void levelorder(Node root) {
         if (root == null) {
             return;
         }
@@ -95,5 +82,51 @@ public class MyFunctions {
                 }
             }
         }
+    }
+
+    // apporach 1 to clauclate diameter of the tree
+
+    // Diameter of the tree
+    public int diameter(Node root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int diameter1 = diameter(root.left);
+        int diameter2 = diameter(root.right);
+        int diameter3 = height(root.left) + height(root.right) + 1;
+
+        return Math.max(diameter3, Math.max(diameter1, diameter2));
+    }
+
+    // approach 2 to clacualte diameter of the tree
+    public static class TreeInfo {
+        public int hight;
+        public int diameter;
+
+        public TreeInfo(int hight, int diameter) {
+            this.hight = hight;
+            this.diameter = diameter;
+        }
+
+    }
+
+    public TreeInfo diameter2(Node root) {
+        if (root == null) {
+            return new TreeInfo(0, 0);
+        }
+
+        TreeInfo left = diameter2(root.left);
+        TreeInfo right = diameter2(root.right);
+
+        int hight = Math.max(left.hight, right.hight) + 1;
+        int diam1 = left.diameter;
+        int diam2 = right.diameter;
+        int diam3 = left.hight + right.hight + 1;
+
+        int diameter = Math.max(diam3, Math.max(diam1, diam2));
+
+        TreeInfo info = new TreeInfo(hight, diameter);
+        return info;
     }
 }
