@@ -18,5 +18,4 @@ public class BuildTree {
 
         return newNode;
     }
-
 }
