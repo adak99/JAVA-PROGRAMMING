@@ -15,9 +15,8 @@ public class CoutOfNodes {
     }
 
     public static void main(String[] args) {
-        int[] nodes = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         BuildTree tree = new BuildTree();
-        Node root = tree.buildTree(nodes);
+        Node root = tree.buildTree(new int[] { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 });
 
         System.out.println("Total numbers of nodes: " + countOfNodes(root));
     }
