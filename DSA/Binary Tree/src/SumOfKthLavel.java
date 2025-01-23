@@ -12,24 +12,17 @@ public class SumOfKthLavel {
 
         Queue<Node> q = new LinkedList<>();
         q.add(root);
-        q.add(null);
 
         int currentLevel = 0;
         int levelSum = 0;
 
         while (!q.isEmpty()) {
-            Node currentNode = q.remove();
 
-            if (currentNode == null) {
-                currentLevel++;
+            int levelsize = q.size();
 
-                if (!q.isEmpty())
-                    q.add(null);
+            for (int i = 0; i < levelsize; i++) {
+                Node currentNode = q.remove();
 
-                if (currentLevel > k)
-                    break;
-
-            } else {
                 if (currentLevel == k)
                     levelSum += currentNode.data;
 
@@ -39,6 +32,11 @@ public class SumOfKthLavel {
                 if (currentNode.right != null)
                     q.add(currentNode.right);
             }
+
+            currentLevel++;
+
+            if (currentLevel > k)
+                break;
         }
 
         return levelSum;
