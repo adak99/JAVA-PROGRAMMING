@@ -38,7 +38,7 @@ public class TreeTraversal {
         System.out.print(root.data + " ");
     }
 
-    // level order traversal
+    // Level order traversal
     public static void levelorder(Node root) {
         if (root == null) {
             return;
@@ -46,28 +46,23 @@ public class TreeTraversal {
 
         Queue<Node> q = new LinkedList<>();
         q.add(root);
-        q.add(null);
 
         while (!q.isEmpty()) {
-            Node currNode = q.remove();
-            if (currNode == null) {
-                System.out.println();
-                if (q.isEmpty()) {
-                    break;
-                } else {
-                    q.add(null);
-                }
-            } else {
-                System.out.print(currNode.data + " ");
+            int levelSize = q.size();
 
-                if (currNode.left != null) {
-                    q.add(currNode.left);
+            for (int i = 0; i < levelSize; i++) {
+                Node currentNode = q.poll();
+                System.out.print(currentNode.data + " ");
+
+                if (currentNode.left != null) {
+                    q.add(currentNode.left);
                 }
 
-                if (currNode.right != null) {
-                    q.add(currNode.right);
+                if (currentNode.right != null) {
+                    q.add(currentNode.right);
                 }
             }
+            System.out.println();
         }
     }
 
