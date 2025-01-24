@@ -19,19 +19,17 @@ public class PrintInRange {
      */
 
     public static void printInRnage(Node root, int x, int y) {
-        if (root == null) {
+        if (root == null)
             return;
-        }
 
         if (root.data >= x && root.data <= y) {
             printInRnage(root.left, x, y);
             System.out.print(root.data + " ");
             printInRnage(root.right, x, y);
-        } else if (root.data >= y) {
+        } else if (root.data >= y)
             printInRnage(root.left, x, y);
-        } else {
+        else
             printInRnage(root.right, x, y);
-        }
     }
 
     public static void main(String[] args) {

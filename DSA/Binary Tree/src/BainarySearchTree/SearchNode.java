@@ -5,17 +5,15 @@ import BainarySearchTree.CreateNode.Node;
 
 public class SearchNode {
     public static boolean search(Node root, int key) {
-        if (root == null) {
+        if (root == null)
             return false;
-        }
 
-        if (root.data > key) { // search for left sub tree
+        if (root.data > key) // search for left sub tree
             return search(root.left, key);
-        } else if (root.data == key) { // if found the node
+        else if (root.data == key) // if found the node
             return true;
-        } else {
+        else
             return search(root.right, key); // search for right sub tree
-        }
     }
 
     public static void main(String[] args) {
@@ -26,10 +24,10 @@ public class SearchNode {
             root = CreateTree.insert(root, key);
         }
 
-        if (search(root, 1)) {
+        if (search(root, 1))
             System.out.println("FOUND");
-        } else {
+        else
             System.out.println("NOT FOUND");
-        }
+
     }
 }

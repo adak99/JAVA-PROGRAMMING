@@ -7,15 +7,14 @@ import BainarySearchTree.CreateNode.Node;
 
 public class RootToLeafPath {
     public static void printRootToLeaf(Node root, ArrayList<Integer> path) {
-        if (root == null) {
+        if (root == null)
             return;
-        }
 
         path.add(root.data);
 
-        if (root.left == null && root.right == null) {
+        if (root.left == null && root.right == null)
             System.out.println(path);
-        } else {
+        else {
             printRootToLeaf(root.left, path);
             printRootToLeaf(root.right, path);
         }
@@ -32,5 +31,4 @@ public class RootToLeafPath {
 
         printRootToLeaf(root, new ArrayList<>());
     }
-
 }
