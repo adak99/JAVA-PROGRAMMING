@@ -5,19 +5,16 @@ import BainarySearchTree.CreateNode.Node;
 public class CreateTree {
     // insert node in tree
     public static Node insert(Node root, int val) {
-        if (root == null) {
+        if (root == null)
             return new Node(val);
-        }
 
         // left sub tree
-        if (root.data > val) {
+        if (root.data > val)
             root.left = insert(root.left, val);
-        }
 
         // right sub tree
-        else {
+        else
             root.right = insert(root.right, val);
-        }
 
         return root;
     }
@@ -31,29 +28,26 @@ public class CreateTree {
      */
 
     public static Node delete(Node root, int key) {
-        if (root.data > key) {
+        if (root.data > key)
             root.left = delete(root.left, key);
-        } else if (root.data < key) {
+        else if (root.data < key)
             root.right = delete(root.right, key);
-        } else {
+        else {
             // case 1
-            if (root.left == null && root.right == null) {
+            if (root.left == null && root.right == null)
                 return null;
-            }
 
             // case 2
-            if (root.left == null) {
+            if (root.left == null)
                 return root.right;
-            } else if (root.right == null) {
+            else if (root.right == null)
                 return root.left;
-            }
 
             // case 3
             Node IS = inorderSuccessor(root.right);
             root.data = IS.data;
             root.right = delete(root.right, IS.data);
         }
-
         return root;
     }
 
