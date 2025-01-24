@@ -5,16 +5,19 @@ import BainarySearchTree.CreateNode.Node;
 public class CreateTree {
     // insert node in tree
     public static Node insert(Node root, int val) {
-        if (root == null)
+        if (root == null) {
             return new Node(val);
+        }
 
         // left sub tree
-        if (root.data > val)
+        if (root.data > val) {
             root.left = insert(root.left, val);
+        }
 
         // right sub tree
-        else
+        else {
             root.right = insert(root.right, val);
+        }
 
         return root;
     }
