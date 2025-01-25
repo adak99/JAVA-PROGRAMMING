@@ -38,16 +38,13 @@ public class SubTreeOfAnotherTree {
     }
 
     public static void main(String[] args) {
-        int[] tree = { 8, 2, 1, -1, -1, 3, -1, -1, 9, -1, 10, -1, -1 };
-        int[] subTree = { 2, 1, -1, -1, 3, -1, -1 };
-
         BuildTree t = new BuildTree();
 
         BuildTree.idx = -1;
-        Node treeRoot = t.buildTree(tree);
+        Node treeRoot = t.buildTree(new int[] { 8, 2, 1, -1, -1, 3, -1, -1, 9, -1, 10, -1, -1 });
 
         BuildTree.idx = -1;
-        Node subTreeRoot = t.buildTree(subTree);
+        Node subTreeRoot = t.buildTree(new int[] { 2, 1, -1, -1, 3, -1, -1 });
 
         if (isSubtree(treeRoot, subTreeRoot)) {
             System.out.println("Subtree is present.");
