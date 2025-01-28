@@ -34,5 +34,6 @@ public class Hash_Map {
         // remove part
         map.remove("China");
         System.out.println(map);
+        System.out.println(map.size());
     }
 }
