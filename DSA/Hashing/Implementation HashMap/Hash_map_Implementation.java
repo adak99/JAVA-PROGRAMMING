@@ -26,7 +26,7 @@ public class Hash_map_Implementation {
 
         private int n; // total numbers of nodes
         private int N; // total number of bukets
-        private LinkedList<Node> bukets[];
+        private LinkedList<Node>[] bukets;
 
         @SuppressWarnings("unchecked")
         public HashMap() {
