@@ -92,20 +92,6 @@ public class Hash_map_Implementation {
                 rehash();// rehashing
         }
 
-        // remove function
-        public V remove(K key) {
-            int bi = hashFunction(key); // Get the bucket index
-            int di = searchInList(key, bi); // Get the data index within the bucket
-
-            if (di == -1) { // Key doesn't exist
-                return null;
-            } else {
-                Node node = bukets[bi].remove(di); // Remove the node at the index
-                n--; // Decrease the total node count
-                return node.vlaue; // Return the removed value
-            }
-        }
-
         // get function
         public V get(K key) {
             int bi = hashFunction(key); // black box
@@ -128,6 +114,20 @@ public class Hash_map_Implementation {
                 return false;
             else
                 return true;
+        }
+
+        // remove function
+        public V remove(K key) {
+            int bi = hashFunction(key); // Get the bucket index
+            int di = searchInList(key, bi); // Get the data index within the bucket
+
+            if (di == -1) { // Key doesn't exist
+                return null;
+            } else {
+                Node node = bukets[bi].remove(di); // Remove the node at the index
+                n--; // Decrease the total node count
+                return node.vlaue; // Return the removed value
+            }
         }
 
         // keySet method
