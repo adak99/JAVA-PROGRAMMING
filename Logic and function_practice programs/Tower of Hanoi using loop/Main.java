@@ -11,16 +11,16 @@ public class Main {
             }
         }
 
-        private Node head = null;
+        private Node top = null;
 
         public boolean isEmpty() {
-            return head == null;
+            return top == null;
         }
 
         public void push(K data) {
             Node newNode = new Node(data);
-            newNode.next = head;
-            head = newNode;
+            newNode.next = top;
+            top = newNode;
         }
 
         public K pop() {
@@ -28,8 +28,8 @@ public class Main {
                 System.out.println("Stack is empty.");
                 return null;
             }
-            K popVal = head.data;
-            head = head.next;
+            K popVal = top.data;
+            top = top.next;
             return popVal;
         }
     }
