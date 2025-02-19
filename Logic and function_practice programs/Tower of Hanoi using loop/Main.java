@@ -46,11 +46,16 @@ public class Main {
 
         @Override
         public String toString() {
-            return String.format("Move disk %s to %s.", source, destination);
+            return String.format("Move disk %d from %s to %s", disk, source, destination);
         }
     }
 
     public static void towerOfHanoi(int n, String source, String helper, String destination) {
+        if (n <= 0) {
+            System.out.println("Number of disks should be positive.");
+            return;
+        }
+
         Stack<Move> stack = new Stack<>();
         stack.push(new Move(n, source, destination));
 
@@ -68,6 +73,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        towerOfHanoi(3, "SCOURCE", "DESTIONATION", "DESTINATION");
+        towerOfHanoi(3, "SOURCE", "HELPER", "DESTINATION");
     }
 }
