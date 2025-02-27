@@ -10,7 +10,7 @@ public class Main {
         System.out.println(Arrays.toString(arr));
     }
 
-    private static void quickSort(int[] arr, int low, int high) {
+    public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int pivot = partition(arr, low, high);
 
