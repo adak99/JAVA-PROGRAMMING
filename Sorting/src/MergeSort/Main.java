@@ -2,12 +2,13 @@ package MergeSort;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {4, 3, 1, 2, 5};
-        int[] result = divided(arr, 0, arr.length - 1);
+        int[] arr = {4, 3, 5, 2, 1};
+        int strIdx = 0, endIdx = arr.length - 1;
+        int[] result = divided(arr, strIdx, endIdx);
         printArr(result);
     }
 
-    public static int[] divided(int[] arr, int strIdx, int endIdx) {
+    private static int[] divided(int[] arr, int strIdx, int endIdx) {
         if (strIdx >= endIdx)
             return new int[]{arr[strIdx]};
 
@@ -16,31 +17,32 @@ public class Main {
         int[] left = divided(arr, strIdx, mid);
         int[] right = divided(arr, mid + 1, endIdx);
 
-        return conqure(left, right);
+        return conqure(arr, left, right);
     }
 
-    private static int[] conqure(int[] left, int[] right) {
-        int[] merge = new int[left.length + right.length];
+    private static int[] conqure(int[] arr, int[] left, int[] right) {
+        int[] mergeArr = new int[left.length + right.length];
 
-        int i = 0; // handel left array index
-        int j = 0; // handel right array index
-        int k = 0; // handel new array index
+        int i = 0; // left array index
+        int j = 0; // right array index
+        int k = 0; // new array index
 
         while (i < left.length && j < right.length) {
             if (left[i] < right[j])
-                merge[k++] = left[i++];
+                mergeArr[k++] = left[i++];
             else
-                merge[k++] = right[j++];
+                mergeArr[k++] = right[j++];
         }
 
         while (i < left.length) {
-            merge[k++] = left[i++];
+            mergeArr[k++] = left[i++];
         }
 
         while (j < right.length) {
-            merge[k++] = right[j++];
+            mergeArr[k++] = right[j++];
         }
-        return merge;
+
+        return mergeArr;
     }
 
     public static void printArr(int[] arr) {
